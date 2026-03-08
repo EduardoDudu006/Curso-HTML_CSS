@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {/*Para centralizar verticalmente é preciso declarar (position: relative;)*/
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 86vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {/*Já o conteúdo precisa ter um (position: absolute;)*/
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <button class="voltar">
+            <p><a href="/capitulo19/fundo001.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
+        </button>
+    </header>
+    <main>
+        <section id="container">
+            <article id="conteudo">
+            </article>
+        </section>
+    </main>
+</body>
+</html>

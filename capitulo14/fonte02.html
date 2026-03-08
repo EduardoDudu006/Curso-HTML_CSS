@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas:
+
+            cm - Centímetros: Medida física real. 1cm = 37.8px.
+            mm - Milímetros: Medida física real.
+            in - Polegadas/Inches: 1 polegada = cm = 96 px.
+            pt - Pontos/Points: Comumente usado em design gráfico e impressão. 1pt = 1/72 de polegada.
+            pc - Picas: 1 pica = 12 pontos.
+            px - Pixels: A unidade mais utilizada. É considerada absoluta na tela, pois define o tamanho exato do elemento, independente do redimensionamento do navegador.
+
+            Medidas Relativas:
+
+            em - Relativo ao tamanho da fonte do elemento pai. Ótimo para componentes escaláveis (botões, ícones).
+            ex - Relativo a altura x de uma fonte.
+            rem - Root EM: Relativo ao tamanho da fonte do elemento raiz (<html>), geralmente. Mais previsível e recomendado para textos e espaçamentos.
+            vw - Viewport Width: da largura da janela do navegador (viewport).
+            vh - Viewport Height: da altura da janela do navegador.
+            % - Porcentagem: Relativo ao tamanho do elemento pai. Muito usado para definir largura (width) e altura (height) flexíveis.
+            vmin/vmax - Baseados na menor ou maior dimensão da viewport, respectivamente.
+
+            Obs.: Para medidas de fonte no font-size a W3C recomenda o uso do (px) e do (em).
+
+            weight - Peso: lighter, normal, bold (Negrito) bolder (Super-negrito) ou Numérico que variade 100 - 900.
+            width = Largura
+            height = Altura
+            */
+        }
+        h1{
+            font-family:  'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            /* Propriedade shorhand font
+            Ordem:
+            font-style -> font-weight -> font-size -> font-family
+            Exemplo:width:
+            font: italic bolder 3em 'work Sans', sans-serif;
+            */
+        }
+        h2{
+            font:  bolder 2em 'work Sans', sans-serif;
+        }
+        p{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+     <p><a href="/capitulo14/fonte01.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
+
+    <h1>Trabalhando com Fontes</h1>
+    <p>Título com 16px.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, aliquam temporibus. Quae, natus rerum itaque iste praesentium sunt cupiditate, ad doloribus consequatur dolore odit veritatis eveniet laudantium facilis enim omnis?</p>
+    <h2>Trabalhando com Fontes</h2>
+    <p>Título com 1em.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam voluptatum molestias dolores iusto aperiam, dolorem alias, quos non repellendus iste fugit quae. Repellat, velit! Nihil nesciunt modi recusandae dicta.</p>
+</body>
+</html>

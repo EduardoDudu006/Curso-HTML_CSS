@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 08</title>
+</head>
+<body>
+    <p><a href="/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar para a primeira página.</a></p>
+    <h1>Capítulo 08</h1>
+    <hr>
+    <h1>Capítulo 8 Aula 02</h1>
+
+    <h3>Negrito  Itálico do jeito certo:</h3>
+    <br>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um - <b>Termo em Negrito</b> - usando a tag &lt;b&gt; (Não Semântica).</p>
+    <p>Nessa frase, tenho um - <strong>Termo em Destaque</strong> - usando a tag &lt;strong&gt;(Semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um - <i>Termo em Itálico</i> - usando a tag &lt;i&gt; (Não Semântica).</p>
+    <p>Nesta frase, temos um - <em>Termo em Ênfase</em> - usando a tag &lt;em&gt; (Semântica).</p>
+    <br>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um - <mark>texto marcado</mark> - usando a tag &lt;mark&gt; (Não Semântica).</p>
+    <p>Podemos criar também um - <mark style="background-color: lime;"> - texto marcado</mark> usando a tag &lt;mark&gt; com o parâmetro CSS (Semântica).</p>
+    <br>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um - <big>Texto Grande</big> - usando a tag &lt;big&gt; (Obsoleta).</p>
+    <p>Estamos criando um - <small>Texto Pequeno</small> - usando a tag &lt;small&gt; (Não Obsoleta).</p>
+    <p>Podemos marcar um <del>Texto como Excluído</del> para indicar que ele deve ser lido , mas não considerado usando a tag &lt;del&gt; (Semântica).</p>
+    <p>Podemos marcar um <ins>Texto como Inserido / Sublinhado</ins> para dar ênfase e/ou indicar que ele foi adicionado depois usando a tag &lt;ins&gt; (Semântica).</p>
+    <p>Existe também o <u>Texto Sublinhado</u> com a tag &lt;u&gt; (Não Semântica).</p>
+    <br>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 - usando a tag &lt;sup&gt; (Semântica).</p>
+    <br>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O - usando a tag &lt;sub&gt; (Semântica).</p>
+    <br>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementByld('teste')</code> é escrito em linguagem JavaScript. Para deixar as letras mais espaçadas entre sí, usamos a tag &lt;code&gt;.</p>
+    <pre>
+        <code>
+        <big>
+            num = int(input('Digite um Número: '))
+            if num % 2 == 0:
+                print(f'O Número {num} é PAR')
+            else:
+                print(f'O Número {num} é ÍMPAR')
+            print('Fim do Programa')
+        </big>
+        </code>
+    <p>Para deixarmos uma Pré-formatação no texto usamos a tag &lt;pre&gt;.</p>
+    </pre>
+    <br>
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q> - colocando texto entre Aspas usando  a tag &lt;q&gt;. <br>(Maneira Semântica de escrever o Código, não se preocupando apenas com a forma e sim com o Sentido. O uso das tags deixam o Código bem mais organizado e atualizado.).</p>
+    <br>
+    <h2>Citações Completas</h2>
+    <p>Segundo Tim Berners-Lee (em Weaving the Web):</p>
+    <blockquote cite="https://www.google.com/search?q=qual+tag+substituiu+a+tag+big+no+html&sca_esv=d370a6d0e6430821&authuser=1&sxsrf=ANbL-n7Yi089P_Vw5VNku7UJ0ozNwtiWWQ%3A1769891704490&source=hp&ei=eGd-ae_2Gvrf1sQP2cnb2A8&iflsig=AFdpzrgAAAAAaX51iNUwCUGNqise2Qqk-d2KqYnZNAm1&aep=22&udm=50&ved=0ahUKEwjvktay0LaSAxX6r5UCHdnkFvsQteYPCBc&oq=&gs_lp=Egdnd3Mtd2l6IgBIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEByAEAmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgA&sclient=gws-wiz&mtid=jmd-aZP9Keyl1sQPrM-v8Qk&mstk=AUtExfAnYbFReo_G-kkNoiowm6BcZ6324myRN9LH-mvM3mGagb7nZVq7cy4p1ub3xczk-6pZ2PZbSp0S3L73i396Z9EPBRgzBGj1X8sm4Dma3QRLM4tpL2jMIco1HvIbL2HS-KzEFNQwW2gakipbro3mJZXssacwWu_5miSLG85iTgmCOM7I3rXMgYNjTQId7pg-TAEhqH31_FdYaGlJEFbuejw6gzqOY7QwXVUmCRK-vhmBnv5SkbTbth6cewiM0eGX0Gz3N-o60ZCgBzpogf5rwV9ZOV-dHWd0Mmo&csuir=1">
+        "O poder da Web está em sua universalidade. O acesso por todos, independentemente de deficiência, é um aspecto essencial." <br>
+        "O HTML deve transmitir a estrutura de um documento hipertexto, mas não os detalhes de sua apresentação."
+    </blockquote>
+    <br>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e <abbr title="JavaScript">JS</abbr>. Estou Gostando Muito. Mostrando o Significado das abreviação das palavras e/ou termos usando a tag &lt;abbr&gt;</p>
+</body>
+</html>

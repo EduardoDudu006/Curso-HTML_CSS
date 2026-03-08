@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/capitulo11/midia/favicon.ico" type="image/x-icon">
+    <title>Capítulo 11</title>
+</head>
+<body>
+     <p><a href="/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar para a primeira página.</a></p>
+    <h1>Aula 01 - Imagens Dinâmicas</h1>
+    <hr>
+
+    <p>Tente abri esse site en vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p>A Imagem exibida muda de acordo com o tamanho da tela.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="/capitulo11/midia/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="/capitulo11/midia/foto-m.png" type="image/png">
+        <img src="/capitulo11/midia/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Aula 02 - Reproduzindo Áudio</h1>
+    <hr>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="/capitulo11/midia/a-stroll-the-grey-room_density_&_time.mp3" controls loop></audio>
+    <p>Para inserir um áudio em seu site é preciso adicionar uma tag &lt;audio&gt; e incluir parâmetros como (controls autoplay).</p>
+    <h4>Outra forma:</h4>
+    <audio preload="auto" controls loop>
+        <source src="/capitulo11/midia/Boogie Down - The Grey Room _ Golden Palms.mp3" type="audio/mpeg">
+    </audio>
+    <p>Dessa forma inserimos a tag &lt;audio&gt; com o parâmetro preload=""...</p>
+    <p>O preload tem três formas:</p>
+    <ul>
+        <li>auto - Espera carregar tudo que há ne página, inclusive o áudio.</li>
+        <li>metadata - Carrega o nome, data, tipo, etc do arquivo.</li>
+        <li>none - Não carrega nada, é necessário apertar o play.</li>
+    </ul>
+    <p>E dentro dela a tag &lt;source&gt; com o parâmetro (src="") e o tipo (type=""). Exemplo: &lt;audio src="" type=""&gt;</p>
+    <h4>Observação:</h4>
+    <p>Tipos de áudio compatíveis com diversos navegadores são:</p>
+    <ul>
+        <li>MP3</li>
+        <li>WAV</li>
+        <li>OGG</li>
+    </ul>
+    <p>Se os àudios não iniciaram automaticamente, infelizmente seu navegador não consegue reproduzir. <a href="/capitulo11/midia/a-stroll-the-grey-room _ density_&_time.mp3">Clique aqui para baixar o arquivo</a></p>
+
+    <h1>Aula 03 - Vídeos: Formatos, Hospedagem, Incorporação de Vídeos Externos</h1>
+    <hr>
+    <h2>Formatos mais utlizados:</h2>
+    <ul>
+        <li>MP4</li>
+        <li>M4V</li>
+        <li>WebM</li>
+        <li>OGV</li>
+    </ul>
+    <h3>Estes vídeos estão hospedados no meu próprio servidor.</h3>
+    <video src="midia/video.mp4" width="560px" poster="midia/cavalos.png" controls loop></video>
+    <video width="560px" poster="midia/paisagem.png" controls>
+        <source src="midia/video02.mp4" type="video/mp4">
+    </video>
+    <h1>Inserindo Vídeos do Youtube:</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=12f1PExn-4F7U6yi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo Vídeos do Vimeo:</h1>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/185871317?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:560px;height:315px;" title="Simone Cirillo - 2016 Character Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <hr>
+    <h1>Link para Página do Desafio 09:</h1>
+    <ul>
+        <li>
+            <p>Clique no Link para acessar a página do <a href="desafio/index.html" rel="next" target="_self">Desafio 09. <img width="15" height="15" src="https://img.icons8.com/dotty/80/forward.png" alt="forward"/></a></p>
+        </li>
+    </ul>
+</body>
+</html>

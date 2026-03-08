@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 90px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+     <p><a href="/capitulo16/caixa01.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora fugiat harum nam voluptas dolor, corporis eius laboriosam iure. Laborum, accusamus fugit dicta impedit exercitationem ab incidunt voluptas commodi dolor.</p>
+                <aside>
+                    <p>Artigo escrito por Eduardo Luz</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Eduardo Luz</p>
+    </footer>
+</body>
+</html>
