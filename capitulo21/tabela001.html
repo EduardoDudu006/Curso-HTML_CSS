@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        .linha {
+            background-color: grey;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .dado {
+            background-color: yellow;
+        }
+
+        .voltar{
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <button class="voltar">
+            <p><a href="/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar para a primeira página.</a></p>
+    </button>
+    <h1>Minha Primeira Tabela</h1>
+    <!--
+    HIERARQUIA DE TABELAS (simples)
+    TABLE = Tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+            TABLE DATA = dado de tabela
+
+    Entender a Hierarquia dos elementos e Extremamente necessário para que seu código fique bem organizado.
+-->
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha"> <!-- Segunda linha -->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+
+        <!-- Obs.: O Consórcio W3C estabelece que o fechamento das Tags <tr> e <td> são facultativos, não sendo obrigatório o uso </tr> ou </td> -->
+    </table>
+
+    <h1 class="titulo">Link para Página do Capítulo 21 - Aula 02:</h1>
+    <ul class="link">
+        <li>
+            <p>Clique no Link para acessar também a página do <a href="/capitulo21/tabela002.html" rel="next" target="_self">Açlinhando conteúdo em tabelas<img width="15" height="15" src="https://img.icons8.com/dotty/80/forward.png" alt="forward"/></a></p>
+        </li>
+    </ul>
+</body>
+</html>
