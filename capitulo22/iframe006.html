@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+     <style>
+        iframe {
+            width: 350px;
+            height: 200px;
+        }
+    </style>
+</head>
+<!-- Criação do Código para carregar o formulário da (pag004.html) -->
+<body>
+    <button class="voltar">
+            <p><a href="/capitulo22/iframe001.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
+    </button>
+
+    <h1>Meu Site principal</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt rem quas ea, corporis voluptatum praesentium temporibus fugit magni iure asperiores? Mollitia ad, dolores odit molestias ullam architecto maiores necessitatibus dolorum.</p>
+
+    <!--Para Bloquear ações maliciosas, usamos a configuração do atributo - (sandbox="sandbox")
+        Também podemos usar o padrão de referência (referrerpolicy="") que funciona como a política de referência para configurar o parâmetro sandbox.
+        Que por padrão é "no-referrer-when-downgrade".
+        Para limitar um pouco mais e não coletar dados do usuário digitando apenas "no-referrer"
+        Para permitir algumas ações, configuramos o sandbox com "allow-same-origin" (permitir conteúdo de mesma origem)
+        E ainda podemos especificar o que irá ser permitido como: "allow-same-origin allow-forms" e também stripts "allow-same-origin allow-forms allow-scripts"
+        -->
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur soluta quaerat tempora excepturi! Voluptatibus architecto id debitis, corrupti esse, quia dolores dignissimos facere magnam eum, laboriosam commodi amet ex eveniet?</p>
+
+    
+</body>
+</html>
