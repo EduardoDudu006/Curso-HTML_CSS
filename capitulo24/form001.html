@@ -14,8 +14,18 @@
     <button class="voltar">
             <p><a href="/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar para a primeira página.</a></p>
     </button>
+
+    <!--
+    Em HTML existem dois métodos simples para envio de formulários. GET e POST.
+    Quando não determinamos nenhum método, automaticamente o HTML utilizará o método padrão que é method="get".
+        Exemplo: <form action="cadastro.php" method="get" autocomplete="off">
+        Esse método deixa exposto na URL os dados fornecidoa pelo usuário.
+    Quando utilizamos o method+"post"
+        Exemplo: <form action="cadastro.php" method="post" autocomplete="off">
+        Os dados ficam ocultos da URL, porém, é possível capturar os dados
+    -->
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.js" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <!--
             É imprecindível usar label para criar relação entre o objeto(input) e a etiqueta (Nome:)
@@ -32,5 +42,11 @@
         </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
+    <h1 class="titulo">Link para Página da Aula 04:</h1>
+    <ul class="link">
+        <li>
+            <p>Clique no Link para acessar também a página do <a href="/capitulo24/form002.html" rel="next" target="_self">Criado caixas de texto e de senhas<img width="15" height="15" src="https://img.icons8.com/dotty/80/forward.png" alt="forward"/></a></p>
+        </li>
+    </ul>
 </body>
 </html>
