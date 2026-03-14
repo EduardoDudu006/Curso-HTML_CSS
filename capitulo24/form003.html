@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+     <button class="voltar">
+            <p><a href="/capitulo24/form001.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
+    </button>
+    <h1>Teste de formuçário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+            <!--
+            Quando o input é do tipo numérico (input type="number") e queremos estabelecer o intervalo entre mínimo e máximo.
+            min="0"
+            max="10"
+            aceitará entradas apenas de 0 a 10
+            E ainda podemos estabelecer o intervalo entre o mínimo e o máximo.
+            Exemplo: step="0.1", onde a média poderá subir ou descer um déssimo.
+            -->
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2026-02">
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2026-03-14">
+        </p>
+         <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora" value="2026-03-14">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
