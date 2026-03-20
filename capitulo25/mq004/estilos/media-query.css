@@ -2,4 +2,84 @@
 
 /* Todas as demais mídias */
 
+/* Typical Device Breakpoints
+------------------------------
+Pequenas Telas: até 600px
+Smartphones:
+    Modo Retrato: 320px a 480px
+    (cobrindo desde modelos compactos até dispositivos premium como o iPhone 17 Pro Max e o Galaxy S26 Ultra).
+    Modo Paisagem: 481px a 767px.
+Tablet:
+    Retrato: 768px a 834px (padrão para iPads e Galaxy Tab A11).
+    Paisagem: 835px a 1024px (ideal para modelos de 10 a 13 polegadas, como o iPad Pro M5).
+Desktop(Laptops e Monitores Padrão): 1025px a 1440px.
+    Resolução recomendada - O ponto de 1366px continua sendo um dos mais utilizados globalmente para otimização de laptops.
+Grandes Telas (Monitores Externos e TVs):
+    Ultra-wide e 4K: Acima de 1440px (com foco em containers de conteúdo entre 1200px e 1600px para manter a legibilidade).
+*/
 
+@media print {
+     body {
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita durante o curso de HTML e CSS do Curso em Vídeo.';
+        text-decoration: overline;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 834px) { /* Tables */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) { /* Desktop */
+     body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}
+
+@media screen and (min-width: 1200px) { /* Grandes Telas */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}
