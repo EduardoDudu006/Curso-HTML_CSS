@@ -3,40 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/icons8-favicon-16.png" type="image/x-icon">
     <!-- Chamadas de Media Query
          Media Query = Media Type (Tipos de Mídia) + Media Feature (Recursos/Filtros de Mídia)
     -->
     <link rel="stylesheet" href="estilos/tela.css" media="screen">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Media Query</title>
 </head>
 <body>
     <button class="voltar">
-            <p><a href="/capitulo25/cap25.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
+            <p class="botao"><a href="/capitulo25/cap25.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
     </button>
     <header>
-        <h1>Notícias</h1>
-        <menu>
+        <h1>Meu Site</h1>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
-                 <li>Home</li>
-                <li>Esportes</li>
-                <li>Política</li>
-                <li>Tecnologia</li>
-                <li>Contato</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
 
         </menu>
     </header>
     <main>
         <article>
-            <h2>Estou aprendendo a criar Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum, odit eum, id veniam blanditiis exercitationem nam placeat asperiores cupiditate vel adipisci reprehenderit quasi et impedit incidunt ut omnis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi inventore fuga quos cum reiciendis suscipit, nostrum, sit maiores quisquam porro maxime nam sequi doloremque? Reprehenderit impedit dolor iste minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae unde, fugiat autem itaque consequuntur sed sapiente voluptatum commodi eos optio natus voluptatem, odio sit quod suscipit, quos ratione laborum.</p>
+            <h2>Testando Media Queries</h2>
+            <p class="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum, odit eum, id veniam blanditiis exercitationem nam placeat asperiores cupiditate vel adipisci reprehenderit quasi et impedit incidunt ut omnis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi inventore fuga quos cum reiciendis suscipit, nostrum, sit maiores quisquam porro maxime nam sequi doloremque? Reprehenderit impedit dolor iste minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae unde, fugiat autem itaque consequuntur sed sapiente voluptatum commodi eos optio natus voluptatem, odio sit quod suscipit, quos ratione laborum.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum, odit eum, id veniam blanditiis exercitationem nam placeat asperiores cupiditate vel adipisci reprehenderit quasi et impedit incidunt ut omnis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi inventore fuga quos cum reiciendis suscipit, nostrum, sit maiores quisquam porro maxime nam sequi doloremque? Reprehenderit impedit dolor iste minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae unde, fugiat autem itaque consequuntur sed sapiente voluptatum commodi eos optio natus voluptatem, odio sit quod suscipit, quos ratione laborum.</p>
+            <p class="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum, odit eum, id veniam blanditiis exercitationem nam placeat asperiores cupiditate vel adipisci reprehenderit quasi et impedit incidunt ut omnis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi inventore fuga quos cum reiciendis suscipit, nostrum, sit maiores quisquam porro maxime nam sequi doloremque? Reprehenderit impedit dolor iste minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae unde, fugiat autem itaque consequuntur sed sapiente voluptatum commodi eos optio natus voluptatem, odio sit quod suscipit, quos ratione laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde, omnis fugit totam repellat excepturi quia. Temporibus sequi ut eveniet, quia vel ipsum numquam assumenda, aperiam corrupti cumque commodi quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla, distinctio aperiam excepturi minus laudantium illum id veniam explicabo magni non. Aliquid, laudantium corrupti iure possimus laboriosam voluptatem est suscipit?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum, odit eum, id veniam blanditiis exercitationem nam placeat asperiores cupiditate vel adipisci reprehenderit quasi et impedit incidunt ut omnis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi inventore fuga quos cum reiciendis suscipit, nostrum, sit maiores quisquam porro maxime nam sequi doloremque? Reprehenderit impedit dolor iste minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae unde, fugiat autem itaque consequuntur sed sapiente voluptatum commodi eos optio natus voluptatem, odio sit quod suscipit, quos ratione laborum.</p>
+            <p class="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum, odit eum, id veniam blanditiis exercitationem nam placeat asperiores cupiditate vel adipisci reprehenderit quasi et impedit incidunt ut omnis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi inventore fuga quos cum reiciendis suscipit, nostrum, sit maiores quisquam porro maxime nam sequi doloremque? Reprehenderit impedit dolor iste minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae unde, fugiat autem itaque consequuntur sed sapiente voluptatum commodi eos optio natus voluptatem, odio sit quod suscipit, quos ratione laborum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero mollitia atque explicabo cum voluptatibus debitis, temporibus hic, recusandae facilis aspernatur animi fugiat saepe officia rem quis consectetur autem quae? Ea?</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 
 </body>
 </html>
