@@ -9,10 +9,11 @@
     -->
     <link rel="stylesheet" href="estilos/tela.css" media="screen">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho">
     <button class="voltar">
             <p class="botao"><a href="/capitulo25/cap25.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
     </button>
@@ -42,6 +43,13 @@
     </main>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu() {
             if(itens.style.display == 'block') {
                 itens.style.display = 'none'

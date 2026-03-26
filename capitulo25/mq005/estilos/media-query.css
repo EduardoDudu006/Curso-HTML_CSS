@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas Telas: até 600px
+Smartphones:
+    Modo Retrato: 320px a 480px
+    (cobrindo desde modelos compactos até dispositivos premium como o iPhone 17 Pro Max e o Galaxy S26 Ultra).
+    Modo Paisagem: 481px a 767px.
+Tablet:
+    Retrato: 768px a 834px (padrão para iPads e Galaxy Tab A11).
+    Paisagem: 835px a 1024px (ideal para modelos de 10 a 13 polegadas, como o iPad Pro M5).
+Desktop(Laptops e Monitores Padrão): 1025px a 1440px.
+    Resolução recomendada - O ponto de 1366px continua sendo um dos mais utilizados globalmente para otimização de laptops.
+Grandes Telas (Monitores Externos e TVs):
+    Ultra-wide e 4K: Acima de 1440px (com foco em containers de conteúdo entre 1200px e 1600px para manter a legibilidade).
+*/
+
+@media screen and (min-width: 768px) {
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block ;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
