@@ -49,13 +49,21 @@ Grandes Telas (Monitores Externos e TVs):
     }
 
     #imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
      #formulario {
-        float: right;
+        float: left;
         width: 50%;
      }
+
+     h1 {
+    font-size: 2em;
+}
+
+     .parag {
+    font-size: 1.2em;
+}
 }
