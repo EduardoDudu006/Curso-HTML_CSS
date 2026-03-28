@@ -36,6 +36,24 @@ Grandes Telas (Monitores Externos e TVs):
         float: right;
         width: 70%;
     }
+
+     .campo {
+        width: 80%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+     form > input[type=submit] {
+        width: 54%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    form > a.botao {
+        width: 54%;
+        margin: auto;
+        margin-top: 5px;
+    }
 }
 
 
@@ -61,9 +79,21 @@ Grandes Telas (Monitores Externos e TVs):
 
      h1 {
     font-size: 2em;
-}
+    }
 
      .parag {
     font-size: 1.2em;
-}
+    }
+
+    .campo {
+        width: 90%;
+    }
+
+    form > input[type=submit] {
+        width: 50%;
+    }
+
+    form > a.botao {
+        width: 50%;
+    }
 }
