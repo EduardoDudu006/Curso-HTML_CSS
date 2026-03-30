@@ -18,6 +18,7 @@ Grandes Telas (Monitores Externos e TVs):
     -------------------------------------------------------------------------------------------------
 */
 
+/* CONFIGURAÇÃO PARA TABLET */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     body {
@@ -25,6 +26,7 @@ Grandes Telas (Monitores Externos e TVs):
     }
     #login {
         width: 80vw;
+        height: 320px;
     }
 
     #imagem {
@@ -44,19 +46,28 @@ Grandes Telas (Monitores Externos e TVs):
     }
 
      form > input[type=submit] {
-        width: 54%;
+        width: 80%;
         margin: auto;
         margin-top: 5px;
+    }
+
+    .campo > input {
+         transform: translateY(-13px);
     }
 
     form > a.botao {
-        width: 54%;
+        width: 80%;
         margin: auto;
         margin-top: 5px;
     }
+
+    .parag {
+        width: 80%;
+        margin: 15px 40px;
+    }
 }
 
-
+/* CONFIGURAÇÃO PARA DESKTOP */
 @media screen and (min-width: 1025px) {
 
      body {
@@ -64,6 +75,7 @@ Grandes Telas (Monitores Externos e TVs):
     }
     #login {
         width: 950px;
+        height: 335px;
     }
 
     #imagem {
@@ -72,17 +84,19 @@ Grandes Telas (Monitores Externos e TVs):
         height: 100%;
     }
 
-     #formulario {
+    #formulario {
         float: left;
         width: 50%;
-     }
+    }
 
-     h1 {
+    h1 {
     font-size: 2em;
     }
 
-     .parag {
-    font-size: 1.2em;
+    .parag {
+        width: 90%;
+    font-size: 1em;
+    margin: 20px 0px;
     }
 
     .campo {
@@ -90,10 +104,10 @@ Grandes Telas (Monitores Externos e TVs):
     }
 
     form > input[type=submit] {
-        width: 50%;
+        width: 90%;
     }
 
     form > a.botao {
-        width: 50%;
+        width: 90%;
     }
 }
