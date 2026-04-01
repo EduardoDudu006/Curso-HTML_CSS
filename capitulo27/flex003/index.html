@@ -10,21 +10,32 @@
             padding: 0px;
             box-sizing: border-box;
         }
+
+        .voltar {
+            width: 70px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
         .titulo01 {
             text-align: center;
         }
+
         .container {
-            width: 260px;
+            width: 900px;
+            height: 50px;
             background-color: lightsalmon;
             display: flex;
             margin: 10px 0px;
         }
 
         .item {
+            width: 500px;
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
 
         #fim {
@@ -32,7 +43,7 @@
         }
 
         .container02 {
-            width: 193px;
+            width: 170px;
             background-color: lightsalmon;
             display: flex;
             flex-wrap: wrap;
@@ -40,14 +51,16 @@
         }
 
         .item02 {
+            width: 500px;
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
 
         .container03 {
-            width: 193px;
+            width: 170px;
             background-color: lightsalmon;
             display: flex;
             flex-direction: row-reverse;
@@ -60,11 +73,11 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
 
         .container04 {
-            width: 150px;
-            height: 330px;
+            width: 170px;
             background-color: lightsalmon;
             display: flex;
             flex-direction: column;
@@ -77,10 +90,11 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
 
         .container0402 {
-            width: 150px;
+            width: 300px;
             height: 252px;
             background-color: lightsalmon;
             display: flex;
@@ -94,6 +108,7 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
 
         .container05 {
@@ -111,6 +126,7 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
 
         .container0502 {
@@ -128,10 +144,11 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
 
         .container06 {
-            width: 193px;
+            width: 170px;
             background-color: lightsalmon;
             display: flex;
             flex-wrap: wrap-reverse;
@@ -143,14 +160,19 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
 
+        /*
+        Podemos substituir as propriedades flex-direction: e flex-wrap:...
+        Pelo shotrhand flex-flow: que faz a junção de ambas.
+        */
+
         .container07 {
-            width: 193px;
+            width: 600px;
             background-color: lightsalmon;
             display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap-reverse;
+            flex-flow: row-reverse wrap-reverse;
             margin: 10px 0px;
         }
 
@@ -159,12 +181,48 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
+        }
+
+        .container08 {
+            width: 300px;
+            height: 252px;
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: column wrap-reverse;
+
+            margin: 10px 0px;
+        }
+
+        .item08 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex: auto;
+        }
+
+        .container09 {
+            width: 600px;
+            height: 100px;
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: column-reverse wrap-reverse;
+            margin: 10px 0px;
+        }
+
+        .item09 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex: auto;
         }
     </style>
 </head>
 <body>
     <button class="voltar">
-            <p><a href="/capitulo27/flex001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/> Voltar.</a></p>
+            <p><a href="/capitulo27/flex001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
     </button>
 
     <h1 class="titulo01">Aula 03: Empacotamento e Fluxo no Flexbox CSS</h1>
@@ -178,131 +236,180 @@
         Nesta configuração o último item do eixo principal (main-axis)... <br>
         Quebra uma linha no sentido do eixo transversal (cross-axis) <br>
         No flex-wrap: wrap; o Último item vai para linha debaixo <br>
-        <h3>Exemplo 01:</h3>
-        <h4>display: flex;</h4>
-        <div class="container">
-            <div class="item">A</div>
-            <div class="item">B</div>
-            <div class="item">C</div>
-            <div class="item">D</div>
-            <div class="item">E</div>
-            <div class="item">F</div>
-            <div class="item" id="fim">G</div>
-        </div>
 
-        <h3>Exemplo 02:</h3>
-        <h4>display: flex; <br>
-            flex-wrap: wrap;</h4>
-        <div class="container02">
-            <div class="item02">A</div>
-            <div class="item02">B</div>
-            <div class="item02">C</div>
-            <div class="item02">D</div>
-            <div class="item02">E</div>
-            <div class="item02">F</div>
-            <div class="item02" id="fim">G</div>
-        </div>
+        <section class="sessao">
+            <h3>Exemplo 01:</h3>
+            <h4>display: flex;</h4>
+            <div class="container">
+                <div class="item">Exemplo de Bloco A</div>
+                <div class="item">Exemplo de Bloco B</div>
+                <div class="item">Exemplo de Bloco C</div>
+                <div class="item">Exemplo de Bloco D</div>
+                <div class="item">Exemplo de Bloco E</div>
+                <div class="item">Exemplo de Bloco F</div>
+                <div class="item" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 02:</h3>
+            <h4>display: flex; <br>
+                flex-wrap: wrap;</h4>
+            <div class="container02">
+                <div class="item02">Exemplo de Bloco A</div>
+                <div class="item02">Exemplo de Bloco B</div>
+                <div class="item02">Exemplo de Bloco C</div>
+                <div class="item02">Exemplo de Bloco D</div>
+                <div class="item02">Exemplo de Bloco E</div>
+                <div class="item02">Exemplo de Bloco F</div>
+                <div class="item02" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 03:</h3>
+            <h4>display: flex; <br>
+                flex-direction: column; <br>
+                flex-wrap: wrap;</h4>
+            <div class="container03">
+                <div class="item03">Exemplo de Bloco A</div>
+                <div class="item03">Exemplo de Bloco B</div>
+                <div class="item03">Exemplo de Bloco C</div>
+                <div class="item03">Exemplo de Bloco D</div>
+                <div class="item03">Exemplo de Bloco E</div>
+                <div class="item03">Exemplo de Bloco F</div>
+                <div class="item03" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 04:</h3>
+            <h4>display: flex; <br>
+                flex-direction: column; <br>
+                flex-wrap: wrap;</h4>
+            <div class="container04">
+                <div class="item04">Exemplo de Bloco A</div>
+                <div class="item04">Exemplo de Bloco B</div>
+                <div class="item04">Exemplo de Bloco C</div>
+                <div class="item04">Exemplo de Bloco D</div>
+                <div class="item04">Exemplo de Bloco E</div>
+                <div class="item04">Exemplo de Bloco F</div>
+                <div class="item04" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 04.2:</h3>
+            <h4>display: flex; <br>
+                flex-direction: column; <br>
+                flex-wrap: wrap;</h4>
+            <div class="container0402">
+                <div class="item0402">Exemplo de Bloco A</div>
+                <div class="item0402">Exemplo de Bloco B</div>
+                <div class="item0402">Exemplo de Bloco C</div>
+                <div class="item0402">Exemplo de Bloco D</div>
+                <div class="item0402">Exemplo de Bloco E</div>
+                <div class="item0402">Exemplo de Bloco F</div>
+                <div class="item0402" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 05:</h3>
+            <h4>display: flex; <br>
+                flex-direction: column; <br>
+                flex-wrap: wrap;</h4>
+            <div class="container05">
+                <div class="item05">Exemplo de Bloco A</div>
+                <div class="item05">Exemplo de Bloco B</div>
+                <div class="item05">Exemplo de Bloco C</div>
+                <div class="item05">Exemplo de Bloco D</div>
+                <div class="item05">Exemplo de Bloco E</div>
+                <div class="item05">Exemplo de Bloco F</div>
+                <div class="item05" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 05.2:</h3>
+            <h4>display: flex; <br>
+                flex-direction: column; <br>
+                flex-wrap: wrap;</h4>
+            <div class="container0502">
+                <div class="item0502">Exemplo de Bloco A</div>
+                <div class="item0502">Exemplo de Bloco B</div>
+                <div class="item0502">Exemplo de Bloco C</div>
+                <div class="item0502">Exemplo de Bloco D</div>
+                <div class="item0502">Exemplo de Bloco E</div>
+                <div class="item0502">Exemplo de Bloco F</div>
+                <div class="item0502" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h2>flex-wrap: wrap-reverse;</h2>
+            Nesta configuração o último item do eixo principal (main-axis)... <br>
+            Quebra uma linha no sentido do eixo transversal (cross-axis) <br>
+            No flex-wrap: wrap-reverse; o Último item vai para linha acima <br>
+            <h3>Exemplo 06:</h3>
+            </p>
+            <h4>display: flex; <br>
+                flex-wrap: wrap-reverse;</h4>
+            <div class="container06">
+                <div class="item06">Exemplo de Bloco A</div>
+                <div class="item06">Exemplo de Bloco B</div>
+                <div class="item06">Exemplo de Bloco C</div>
+                <div class="item06">Exemplo de Bloco D</div>
+                <div class="item06">Exemplo de Bloco E</div>
+                <div class="item06">Exemplo de Bloco F</div>
+                <div class="item06" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 07:</h3>
+            <h4>display: flex; <br>
+                flex-wrap: wrap-reverse;</h4>
+            <div class="container07">
+                <div class="item07">Exemplo de Bloco A</div>
+                <div class="item07">Exemplo de Bloco B</div>
+                <div class="item07">Exemplo de Bloco C</div>
+                <div class="item07">Exemplo de Bloco D</div>
+                <div class="item07">Exemplo de Bloco E</div>
+                <div class="item07">Exemplo de Bloco F</div>
+                <div class="item07" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 08:</h3>
+            <h4>display: flex; <br>
+                flex-direction: column; <br>
+                flex-wrap: wrap-reverse;</h4>
+            <div class="container08">
+                <div class="item08">Exemplo de Bloco A</div>
+                <div class="item08">Exemplo de Bloco B</div>
+                <div class="item08">Exemplo de Bloco C</div>
+                <div class="item08">Exemplo de Bloco D</div>
+                <div class="item08">Exemplo de Bloco E</div>
+                <div class="item08">Exemplo de Bloco F</div>
+                <div class="item08" id="fim">Exemplo de Bloco G</div>
+            </div>
+            <h3>Exemplo 09:</h3>
+            <h4>display: flex; <br>
+                flex-direction: column; <br>
+                flex-wrap: wrap-reverse;</h4>
+            <div class="container09">
+                <div class="item09">Exemplo de Bloco A</div>
+                <div class="item09">Exemplo de Bloco B</div>
+                <div class="item09">Exemplo de Bloco C</div>
+                <div class="item09">Exemplo de Bloco D</div>
+                <div class="item09">Exemplo de Bloco E</div>
+                <div class="item09">Exemplo de Bloco F</div>
+                <div class="item09" id="fim">Exemplo de Bloco G</div>
+            </div>
+        </section>
 
-        <h3>Exemplo 03:</h3>
-        <h4>display: flex; <br>
-            flex-direction: column; <br>
-            flex-wrap: wrap;</h4>
-        <div class="container03">
-            <div class="item03">A</div>
-            <div class="item03">B</div>
-            <div class="item03">C</div>
-            <div class="item03">D</div>
-            <div class="item03">E</div>
-            <div class="item03">F</div>
-            <div class="item03" id="fim">G</div>
-        </div>
-
-        <h3>Exemplo 04:</h3>
-        <h4>display: flex; <br>
-            flex-direction: column; <br>
-            flex-wrap: wrap;</h4>
-        <div class="container04">
-            <div class="item04">A</div>
-            <div class="item04">B</div>
-            <div class="item04">C</div>
-            <div class="item04">D</div>
-            <div class="item04">E</div>
-            <div class="item04">F</div>
-            <div class="item04" id="fim">G</div>
-        </div>
-
-        <h3>Exemplo 04.2:</h3>
-        <h4>display: flex; <br>
-            flex-direction: column; <br>
-            flex-wrap: wrap;</h4>
-        <div class="container0402">
-            <div class="item0402">A</div>
-            <div class="item0402">B</div>
-            <div class="item0402">C</div>
-            <div class="item0402">D</div>
-            <div class="item0402">E</div>
-            <div class="item0402">F</div>
-            <div class="item0402" id="fim">G</div>
-        </div>
-
-        <h3>Exemplo 05:</h3>
-        <h4>display: flex; <br>
-            flex-direction: column; <br>
-            flex-wrap: wrap;</h4>
-        <div class="container05">
-            <div class="item05">A</div>
-            <div class="item05">B</div>
-            <div class="item05">C</div>
-            <div class="item05">D</div>
-            <div class="item05">E</div>
-            <div class="item05">F</div>
-            <div class="item05" id="fim">G</div>
-        </div>
-
-        <h3>Exemplo 05.2:</h3>
-        <h4>display: flex; <br>
-            flex-direction: column; <br>
-            flex-wrap: wrap;</h4>
-        <div class="container0502">
-            <div class="item0502">A</div>
-            <div class="item0502">B</div>
-            <div class="item0502">C</div>
-            <div class="item0502">D</div>
-            <div class="item0502">E</div>
-            <div class="item0502">F</div>
-            <div class="item0502" id="fim">G</div>
-        </div>
-        <h2>flex-wrap: wrap-reverse;</h2>
-        Nesta configuração o último item do eixo principal (main-axis)... <br>
-        Quebra uma linha no sentido do eixo transversal (cross-axis) <br>
-        No flex-wrap: wrap-reverse; o Último item vai para linha acima <br>
-        <h3>Exemplo 06:</h3>
+        <h1>Propriedade Flex-flow</h1>
+        <p>
+            <strong>Como vimos antes existe o flex-direction:</strong> <br>
+            flex-direction: row; (linha)<br>
+            flex-direction: row-reverse; (linha-reversa)<br>
+            flex-direction: column; (coluna)<br>
+            flex-direction: column-reverse; (coluna-reversa)<br>
         </p>
-
-
-        <h4>display: flex; <br>
-            flex-wrap: wrap-reverse;</h4>
-        <div class="container06">
-            <div class="item06">A</div>
-            <div class="item06">B</div>
-            <div class="item06">C</div>
-            <div class="item06">D</div>
-            <div class="item06">E</div>
-            <div class="item06">F</div>
-            <div class="item06" id="fim">G</div>
-        </div>
-
-        <h3>Exemplo 07:</h3>
-        <h4>display: flex; <br>
-            flex-wrap: wrap-reverse;</h4>
-        <div class="container07">
-            <div class="item07">A</div>
-            <div class="item07">B</div>
-            <div class="item07">C</div>
-            <div class="item07">D</div>
-            <div class="item07">E</div>
-            <div class="item07">F</div>
-            <div class="item07" id="fim">G</div>
-        </div>
+        <p>
+            <strong>Como também existe o flex-wrap:</strong> <br>
+            flex-wrap: nowrap; <br>
+            flex-wrap: wrap; <br>
+            flex-wrap: wrap-reverse; <br>
+        </p>
+        <p>
+            <strong>
+                Sendo assim, a propriedade flex-flow é um shorthand <br>
+                Que faz a junção do flex-direction + flex-wrap. <br>
+                Exemplos:
+            </strong> <br>
+        </p>
+        <p>
+            flex-direction: row; <br>
+            flex-wrap: nowrap; <br>
+            <br>
+            <strong>Podemos simplificar utilizando:</strong> <br> <br>
+            flex-flow: row nowrap;
+        </p>
 </body>
 </html>
