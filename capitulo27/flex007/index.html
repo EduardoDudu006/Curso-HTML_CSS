@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia dos Itens Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(121, 177, 233);
+        }
+
+        .voltar {
+            width: 70px;
+            height: 30px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 5px 5px;
+        }
+
+        .titulo01 {
+            text-align: center;
+            margin: 10px;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: darkred;
+            text-shadow: 2px 1px 2px gray;
+            padding: 10px;
+        }
+
+        .sessao01 {
+            background-color: lightseagreen;
+            height: 100px;
+            width: 600px;
+            margin: 20px 20px 0px 80px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item01 {
+            width: 70px;
+            height: 90px;
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sessao02 {
+            background-color: lightseagreen;
+            height: 100px;
+            width: 600px;
+            margin: 20px 20px 0px 80px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item02 {
+            width: 70px;
+            height: 90px;
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #i1 {
+            order: 0;
+        }
+
+        #i2 {
+            order: -2;
+        }
+
+        #i3 {
+            order: 4;
+        }
+
+        #i4 {
+            order: 8;
+        }
+
+        #i5 {
+            order: 2;
+        }
+
+        #i6 {
+            order: 0;
+        }
+
+        #i7 {
+            order: -4;
+        }
+
+        .sessao03 {
+            background-color: lightseagreen;
+            height: 400px;
+            width: 600px;
+            margin: 20px 20px 0px 80px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item03 {
+            width: 70px;
+            height: 90px;
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #i1 {
+            align-self: auto;
+        }
+
+        #i2 {
+            align-self: flex-start;
+        }
+
+        #i3 {
+            align-self: flex-end;
+        }
+
+        #i4 {
+            align-self: center;
+        }
+
+        #i5 {
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="voltar">
+                <p><a href="/capitulo27/flex001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
+        </button>
+        <h1 class="titulo01">Aula 07: Anatomia dos Itens Flexbox - order: e align-self:</h1>
+        <hr>
+        <h2>Todo item configurado dentro de um container inicia por padrão com - order: 0;</h2>
+
+        <h2 class="info">align-content: stretch; (Padrão)</h2>
+        <h3>Exemplo 01: <br>
+        .sessao01 { <br>
+        display: flex; <br>
+        flex-flow: row wrap; <br>
+        } <br>
+
+        .item01 {
+
+            background-color: aquamarine; <br>
+            border: 1px solid darkgreen; <br>
+            text-align: center; <br>
+            padding: 7px; <br>
+            flex: auto; <br>
+        }
+        </h3>
+
+        <section class="sessao01">
+            <div class="item01">A</div>
+            <div class="item01">B</div>
+            <div class="item01">C</div>
+            <div class="item01">D</div>
+            <div class="item01">E</div>
+            <div class="item01">F</div>
+            <div class="item01">G</div>
+        </section>
+
+        <h2 class="info">align-content: stretch; (Padrão)</h2>
+        <h3>Exemplo 02:</h3>
+        <section class="sessao02">
+            <div class="item02" id="i1">A</div>
+            <div class="item02" id="i2">B</div>
+            <div class="item02" id="i3">C</div>
+            <div class="item02" id="i4">D</div>
+            <div class="item02" id="i5">E</div>
+            <div class="item02" id="i6">F</div>
+            <div class="item02" id="i7">G</div>
+        </section>
+
+        <h2 class="info">align-content: stretch; (Padrão)</h2>
+        <h3>Exemplo 03:</h3>
+        <section class="sessao03">
+            <div class="item03" id="i1">A</div>
+            <div class="item03" id="i2">B</div>
+            <div class="item03" id="i3">C</div>
+            <div class="item03" id="i4">D</div>
+            <div class="item03" id="i5">E</div>
+        </section>
+</body>
+</html>
