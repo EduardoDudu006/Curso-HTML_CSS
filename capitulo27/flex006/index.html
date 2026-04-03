@@ -27,6 +27,10 @@
             text-align: center;
             margin: 10px;
             margin-bottom: 20px;
+            font-size: 2.5em;
+            color: darkred;
+            text-shadow: 2px 1px 2px gray;
+            padding: 10px;
         }
 
         .info01 {
@@ -44,9 +48,9 @@
             margin-left: 20px;
         }
 
-        .info04 {
+        .info04, h2, h3 {
             color: rgb(85, 0, 0);
-            margin-left: 20px;
+            margin: 10px 30px 0px 60px;
         }
 
         main {
@@ -61,15 +65,14 @@
 
         .sessao01 {
             background-color: lightseagreen;
-            height: 180px;
-            width: 350px;
+            height: 380px;
+            width: 847px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
-
-            align-content: stretch;
             border: 1px solid darkgreen;
             border-radius: 10px;
+            gap: 25.5px;
         }
 
         .item01 {
@@ -85,8 +88,8 @@
 
         .sessao02 {
             background-color: lightseagreen;
-            height: 130px;
-            width: 350px;
+            height: 180px;
+            width: 847px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
@@ -110,7 +113,7 @@
         .sessao03 {
             background-color: lightseagreen;
             height: 350px;
-            width: 250px;
+            width: 300px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
@@ -133,8 +136,8 @@
 
         .sessao04 {
             background-color: lightseagreen;
-            height: 130px;
-            width: 350px;
+            height: 180px;
+            width: 847px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
@@ -157,8 +160,8 @@
 
         .sessao05 {
             background-color: lightseagreen;
-            height: 350px;
-            width: 250px;
+            height: 550px;
+            width: 300px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
@@ -181,8 +184,8 @@
 
         .sessao06 {
             background-color: lightseagreen;
-            height: 130px;
-            width: 350px;
+            height: 180px;
+            width: 847px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
@@ -203,15 +206,39 @@
             margin: 3px;
         }
 
-        .sessao07 {
+        .sessao0601 {
             background-color: lightseagreen;
-            height: 350px;
-            width: 250px;
+            height: 180px;
+            width: 847px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
+            align-content: center;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+        }
+
+        .item06 {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            padding: 40px;
+            margin: 3px;
+        }
+
+        .sessao07 {
+            background-color: lightseagreen;
+            height: 500px;
+            width: 300px;
+            margin: 20px 20px 0px 80px;
+            display: flex;
+            flex-flow: row wrap;
             align-content: space-between;
             border: 1px solid darkgreen;
             border-radius: 10px;
@@ -231,13 +258,11 @@
 
         .sessao08 {
             background-color: lightseagreen;
-            height: 350px;
-            width: 250px;
+            height: 500px;
+            width: 300px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
             align-content: space-evenly;
             border: 1px solid darkgreen;
             border-radius: 10px;
@@ -257,13 +282,11 @@
 
         .sessao09 {
             background-color: lightseagreen;
-            height: 130px;
-            width: 350px;
+            height: 500px;
+            width: 300px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
             align-content: space-around;
             border: 1px solid darkgreen;
             border-radius: 10px;
@@ -283,13 +306,11 @@
 
         .sessao10 {
             background-color: lightseagreen;
-            height: 350px;
-            width: 250px;
+            height: 500px;
+            width: 300px;
             margin: 20px 20px 0px 80px;
             display: flex;
             flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
             align-content: space-around;
             border: 1px solid darkgreen;
             border-radius: 10px;
@@ -310,103 +331,153 @@
     </style>
 </head>
 <body>
-    <button class="voltar">
-            <p><a href="/capitulo27/flex001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
-    </button>
 
-    <h1 class="titulo01">Aula 06: Alinhamento de Elementos Empacotados no Flexbox</h1>
-        <h2 class="info01">justify-content - Alinha o conteúdo no main-axis (Eixo Principal).</h2>
-        <h2 class="info02">align-items - Alinha o conteúdo no cross-axis (Eixo Transversal).</h2>
-        <h2 class="info03">align-content - Alinha o conteúdo no cross-axis (Eixo Transversal), apenas quando estão Empacotados.</h2>
-        <h2 class="info04">
-            Obs.: align-content: stretch; (Padrão)
-        </h2>
-        <h3>Exemplo 01:</h3>
-        <section class="sessao01">
-            <div class="item01">A</div>
-            <div class="item01">B</div>
-            <div class="item01">C</div>
-        </section>
+        <button class="voltar">
+                <p><a href="/capitulo27/flex001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
+        </button>
 
-        <h2 class="info0402">align-content: flex-start; (Posiciona no início do cross-axis (Eixo-Transversal))</h2>
-        <h3>Exemplo 02:</h3>
-        <section class="sessao02">
-            <div class="item02">A</div>
-            <div class="item02">B</div>
-            <div class="item02">C</div>
-        </section>
+            <h1 class="titulo01">Aula 06: Alinhamento de Elementos Empacotados no Flexbox</h1>
+                <h2 class="info01">justify-content - Alinha o conteúdo no main-axis (Eixo Principal).</h2>
+                <h2 class="info02">align-items - Alinha o conteúdo no cross-axis (Eixo Transversal).</h2>
+                <h2 class="info03">align-content - Alinha o conteúdo no cross-axis (Eixo Transversal), apenas quando estão Empacotados.</h2>
+                <h2 class="info03">Obs.: Para usar o align-content, é preciso já ter configurado a estilização com: <br>
+                    display: flex; <br>
+                    flex-flow; row wrap; <br>
+                Ou então, não funcionará.
+                </h2>
+                <h2 class="info04">
+                    align-content: stretch; (Padrão)
+                </h2>
+                <h3>Exemplo 01:</h3>
+                <section class="sessao01">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: flex-start; (Posiciona no início do cross-axis (Eixo-Transversal))</h2>
+                <h3>Exemplo 02:</h3>
+                <section class="sessao02">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: flex-start; com quebra de linha no sentido do cross-axis (Eixo-Transversal)</h2>
+                <h3>Exemplo 03:</h3>
+                <section class="sessao03">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: flex-end; (Posiciona no final do cross-axis (Eixo-Transversal))</h2>
+                <h3>Exemplo 04:</h3>
+                <section class="sessao04">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: flex-end; com quebra de linha no sentido do cross-axis (Eixo-Transversal)</h2>
+                <h3>Exemplo 05:</h3>
+                <section class="sessao05">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: center; Posiciona no centro do cross-axis (Eixo-Transversal)</h2>
+                <h3>Exemplo 06:</h3>
+                <section class="sessao06">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
 
-        <h2 class="info0402">align-content: flex-start; com quebra de linha no sentido do cross-axis (Eixo-Transversal)</h2>
-        <h3>Exemplo 03:</h3>
-        <section class="sessao03">
-            <div class="item03">A</div>
-            <div class="item03">B</div>
-            <div class="item03">C</div>
-        </section>
+                <h3>Exemplo 06.1: <br>
+                    align-content: center; <br>
+                    justify-content: center; <br>
+                    align-items: center;
+                </h3>
+                <section class="sessao0601">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: space-between; com quebra de linha no sentido do cross-axis (Eixo-Transversal) <br>
+                Alinhando os items no início e no fim, deixando um espaço no meio.</h2>
+                <h3>Exemplo 07:</h3>
+                <section class="sessao07">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: space-evenly; Posiciona no centro do cross-axis (Eixo-Transversal)... <br>
+                    Deixando espaçamentos iguais no início, meio e fim.</h2>
+                <h3>Exemplo 08:</h3>
+                <section class="sessao08">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: space-around; Divide o cross-axis (Eixo-Transversal) em partes iguais... <br>
+                    Posicionando os itens de maneira centralizada dentro dos espaços do cross-axis.
+                </h2>
+                <h3>Exemplo 09:</h3>
+                <section class="sessao09">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
+                <h2 class="info0402">align-content: space-around; Divide o cross-axis (Eixo-Transversal) em partes iguais... <br>
+                    Posicionando os itens de maneira centralizada dentro dos espaços do cross-axis.
+                </h2>
+                <h3>Exemplo 10:</h3>
+                <section class="sessao10">
+                    <div class="item01">A</div>
+                    <div class="item01">B</div>
+                    <div class="item01">C</div>
+                    <div class="item01">D</div>
+                    <div class="item01">E</div>
+                    <div class="item01">F</div>
+                    <div class="item01">G</div>
+                </section>
 
-        <h2 class="info0402">align-content: flex-end; (Posiciona no final do cross-axis (Eixo-Transversal))</h2>
-        <h3>Exemplo 04:</h3>
-        <section class="sessao04">
-            <div class="item04">A</div>
-            <div class="item04">B</div>
-            <div class="item04">C</div>
-        </section>
-
-        <h2 class="info0402">align-content: flex-end; com quebra de linha no sentido do cross-axis (Eixo-Transversal)</h2>
-        <h3>Exemplo 05:</h3>
-        <section class="sessao05">
-            <div class="item05">A</div>
-            <div class="item05">B</div>
-            <div class="item05">C</div>
-        </section>
-
-        <h2 class="info0402">align-content: center; Posiciona no centro do cross-axis (Eixo-Transversal)</h2>
-        <h3>Exemplo 06:</h3>
-        <section class="sessao06">
-            <div class="item06">A</div>
-            <div class="item06">B</div>
-            <div class="item06">C</div>
-        </section>
-
-        <h2 class="info0402">align-content: space-between; com quebra de linha no sentido do cross-axis (Eixo-Transversal) <br>
-        Alinhando os items no início e no fim, deixando um espaço no meio.</h2>
-        <h3>Exemplo 07:</h3>
-        <section class="sessao07">
-            <div class="item07">A</div>
-            <div class="item07">B</div>
-            <div class="item07">C</div>
-            <div class="item07">D</div>
-        </section>
-
-        <h2 class="info0402">align-content: space-evenly; Posiciona no centro do cross-axis (Eixo-Transversal)... <br>
-            Deixando espaçamentos iguais no início, meio e fim.</h2>
-        <h3>Exemplo 08:</h3>
-        <section class="sessao08">
-            <div class="item08">A</div>
-            <div class="item08">B</div>
-            <div class="item08">C</div>
-            <div class="item08">D</div>
-        </section>
-
-        <h2 class="info0402">align-content: space-around; Divide o cross-axis (Eixo-Transversal) em partes iguais... <br>
-            Posicionando os itens de maneira centralizada dentro dos espaços do cross-axis.
-        </h2>
-        <h3>Exemplo 09:</h3>
-        <section class="sessao09">
-            <div class="item09">A</div>
-            <div class="item09">B</div>
-            <div class="item09">C</div>
-        </section>
-
-        <h2 class="info0402">align-content: space-around; Divide o cross-axis (Eixo-Transversal) em partes iguais... <br>
-            Posicionando os itens de maneira centralizada dentro dos espaços do cross-axis.
-        </h2>
-        <h3>Exemplo 10:</h3>
-        <section class="sessao10">
-            <div class="item10">A</div>
-            <div class="item10">B</div>
-            <div class="item10">C</div>
-            <div class="item10">D</div>
-        </section>
 </body>
 </html>
