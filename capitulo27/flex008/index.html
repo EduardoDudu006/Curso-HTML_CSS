@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade flex-basis em Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightgreen;
+        }
+
+        .voltar {
+            width: 70px;
+            height: 30px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 5px 5px;
+        }
+
+        .titulo01 {
+            text-align: center;
+            margin: 10px;
+            margin-bottom: 20px;
+            font-size: 3em;
+            color: darkgreen;
+            text-shadow: 1px 1px 1px gray;
+            padding: 10px;
+        }
+
+        .exemplo {
+            margin: 20px 20px 0px 50px;
+        }
+
+        .sessao01 {
+            background-color: lightseagreen;
+
+            margin: 20px 20px 0px 0px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item01 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+        }
+
+        .sessao02 {
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 0px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item02 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button class="voltar">
+        <p><a href="/capitulo27/flex001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
+    </button>
+    <h1 class="titulo01">Aula 08: Propriedade flex-basis em Flexbox</h1>
+    <hr>
+    <br>
+    <h3 class="exemplo">Exemplo 01: <br> <br>
+
+        .sessao01 { <br>
+        display: flex; <br>
+        flex-flow: row wrap; <br>
+        } <br>
+
+        .item01 { <br>
+
+            background-color: aquamarine; <br>
+            border: 1px solid darkgreen; <br>
+            text-align: center; <br>
+            padding: 7px; <br>
+            flex-basis: 150px; <br>
+        }
+    </h3>
+    <section class="sessao01">
+        <div class="item01">Aaaaaaa</div>
+        <div class="item01">Bbbb</div>
+        <div class="item01">Cccccccccc</div>
+        <div class="item01">Ddddddd</div>
+        <div class="item01">Eeee</div>
+        <div class="item01">Fffffff</div>
+        <div class="item01">Ggggggggggg</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 02: <br> <br>
+
+        .sessao02 { <br>
+        display: flex; <br>
+        flex-flow: row nowrap; <br>
+        } <br>
+
+        .item02 { <br>
+
+            background-color: aquamarine; <br>
+            border: 1px solid darkgreen; <br>
+            text-align: center; <br>
+            padding: 7px; <br>
+            flex-basis: 150px; <br>
+        }
+    </h3>
+
+    <section class="sessao02">
+        <div class="item02">Aaaaaaa</div>
+        <div class="item02">Bbbb</div>
+        <div class="item02">Ccc</div>
+        <div class="item02">Dddd</div>
+        <div class="item02">Eeeeeee</div>
+        <div class="item02">Fffff</div>
+        <div class="item02">Gggggg</div>
+    </section>
+</body>
+</html>
