@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de tamanho de itens flexiveis</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightslategrey;
+        }
+
+        .voltar {
+            width: 70px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 5px 5px;
+        }
+
+        .titulo01 {
+            text-align: center;
+            margin: 10px;
+            margin-bottom: 20px;
+            font-size: 3em;
+            color: darkgreen;
+            text-shadow: 1px 1px 1px black;
+            padding: 10px;
+        }
+
+        .info {
+            width: 800px;
+            height: 120px;
+            background-color: lightseagreen;
+            margin: auto;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+
+        .exemplo {
+            margin: 20px 20px 0px 50px;
+        }
+
+        .sessao01 {
+            width: 550px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item01 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+        }
+
+        .sessao02 {
+            width: 450px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item02 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+        }
+
+        .sessao03 {
+            width: 250px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item03 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+        }
+
+        .sessao04 {
+            width: 300px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item04 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        .sessao05 {
+            width: 850px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item05 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        .sessao06 {
+            width: 350px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item06 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .sessao07 {
+            width: 1150px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item07 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+        }
+
+        #i1 {
+            flex-grow: 0;
+        }
+
+        #i2 {
+            flex-grow: 1;
+        }
+
+        #i3 {
+            flex-grow: 2;
+        }
+
+        .sessao08 {
+            width: 400px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item08 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 150px;
+        }
+
+        #i1 {
+            flex-shrink: 0;
+        }
+
+        #i2 {
+            flex-shrink: 1;
+        }
+
+        #i3 {
+            flex-shrink: 0;
+        }
+
+        .sessao09 {
+            width: 950px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item09 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #i1 {
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        #i2 {
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        #i3 {
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+        .sessao0902 {
+            width: 450px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item0902 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #i1 {
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        #i2 {
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        #i3 {
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+        .sessao0903 {
+            width: 330px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item0903 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #i1 {
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        #i2 {
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        #i3 {
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <button class="voltar">
+        <p><a href="/capitulo27/flex001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
+    </button>
+    <h1 class="titulo01">Aula 09: Controle de tamanho de itens flexiveis</h1>
+    <hr>
+    <br>
+    <h3 class="info">Vamos conhecer as propriedades flex-shrink: (Pode Encolher?) e flex-grow: (Pode Aumentar?)<br>
+        Por padrão essas duas propriedades vêm com: <br>
+        flex-shrink: 1 - Isso significa que o elemento pode encolher.<br>
+        flex-grow: 0 - Isso significa que o elemento não pode aumentar. <br>
+    </h3>
+    <h3 class="exemplo">Exemplo 01: <br> <br>
+
+        .sessao01 { <br>
+            width: 550px;
+            display: flex; <br>
+            flex-flow: row nowrap; <br>
+        } <br>
+
+        .item01 { <br>
+            background-color: aquamarine; <br>
+            border: 1px solid darkgreen; <br>
+            text-align: center; <br>
+            padding: 7px; <br>
+            flex-basis: 150px; <br>
+        }
+    </h3>
+    <section class="sessao01">
+        <div class="item01">A</div>
+        <div class="item01">B</div>
+        <div class="item01">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 02: <br> <br>
+
+        .sessao02 { <br>
+            width: 450px;
+        }
+    </h3>
+    <section class="sessao02">
+        <div class="item02">A</div>
+        <div class="item02">B</div>
+        <div class="item02">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 03: <br> <br>
+
+        .sessao03 { <br>
+            width: 250px;
+        } <br>
+
+
+    </h3>
+    <section class="sessao03">
+        <div class="item03">A</div>
+        <div class="item03">B</div>
+        <div class="item03">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 04: <br> <br>
+
+        .sessao04 { <br>
+            width: 300px;
+            display: flex; <br>
+            flex-flow: row nowrap; <br>
+        } <br>
+
+        .item04 { <br>
+            flex-basis: 150px; <br>
+            flex-shrink: 1; (O item pode Encolher)<br>
+            flex-grow: 0; (O item Não pode Crescer) <br>
+        }
+    </h3>
+    <section class="sessao04">
+        <div class="item04">A</div>
+        <div class="item04">B</div>
+        <div class="item04">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 05: <br> <br>
+
+        .sessao05 { <br>
+            width: 300px;
+            display: flex; <br>
+            flex-flow: row nowrap; <br>
+        } <br>
+
+        .item05 { <br>
+            flex-basis: 150px; <br>
+            flex-shrink: 1; (O item pode Encolher)<br>
+            flex-grow: 1; (O item pode Crescer) <br>
+        }
+    </h3>
+    <section class="sessao05">
+        <div class="item05">A</div>
+        <div class="item05">B</div>
+        <div class="item05">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 06: <br> <br>
+
+        .sessao06 { <br>
+            width: 300px;
+            display: flex; <br>
+            flex-flow: row nowrap; <br>
+        } <br>
+
+        .item06 { <br>
+            flex-basis: 150px; <br>
+            flex-shrink: 0; (O item Não pode Encolher)<br>
+            flex-grow: 0; (O item Não pode Crescer) <br>
+        }
+    </h3>
+    <section class="sessao06">
+        <div class="item06">A</div>
+        <div class="item06">B</div>
+        <div class="item06">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 07 - flex-grow: <br> <br>
+
+        .sessao07 { <br>
+            width: 300px;
+            display: flex; <br>
+            flex-flow: row nowrap; <br>
+        } <br>
+
+        .item07 { <br>
+            flex-basis: 150px; <br>
+        } <br>
+
+        #i1 { <br>
+            flex-grow: 0; (O item Não pode Crescer)<br>
+        } <br>
+
+        #i2 { <br>
+            flex-grow: 1; (O item pode Crescer)<br>
+        } <br>
+
+        #i3 { <br>
+            flex-grow: 2; (O item pode Crescer o dobro em relação ao item anterior)<br>
+        } <br>
+    </h3>
+    <section class="sessao07">
+        <div class="item07" id="i1">A</div>
+        <div class="item07" id="i2">B</div>
+        <div class="item07" id="i3">C</div>
+    </section>
+
+
+
+    <h3 class="exemplo">Exemplo 09 - flex-basis:, flex-grow:, flex-shrink: <br> <br>
+
+        .sessao09 { <br>
+            width: 950px;
+            display: flex; <br>
+            flex-flow: row nowrap; <br>
+        } <br>
+
+        .item09 { <br>
+            flex-basis: 150px; <br>
+        } <br>
+
+        #i1 { <br>
+            flex-basis: 150px; <br>
+            flex-grow: 0; (O item Não pode Crescer) <br>
+            flex-shrink: 1; (O item pode Encolher)<br>
+        } <br>
+
+        #i2 { <br>
+            flex-basis: 150px; <br>
+            flex-grow: 2; (O item B pode Crescer o dobro em relação ao item C)<br>
+            flex-shrink: 0; (O item Não pode Encolher)<br>
+        } <br>
+
+        #i3 { <br>
+            flex-basis: 150px; <br>
+            flex-grow: 1; <br>
+            flex-shrink: 2; (O item C pode Encolher o dobro em relação ao item A)<br>
+        } <br>
+    </h3>
+    <section class="sessao09">
+        <div class="item09" id="i1">A</div>
+        <div class="item09" id="i2">B</div>
+        <div class="item09" id="i3">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 09.2 - flex-shrink: <br> <br>
+
+        .sessao0902 { <br>
+            width: 450px;
+        }
+    </h3>
+    <section class="sessao0902">
+        <div class="item0902" id="i1">A</div>
+        <div class="item0902" id="i2">B</div>
+        <div class="item0902" id="i3">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 09.3 - flex-shrink: <br> <br>
+
+        .sessao0903 { <br>
+            width: 330px;
+        }
+    </h3>
+    <section class="sessao0903">
+        <div class="item0903" id="i1">A</div>
+        <div class="item0903" id="i2">B</div>
+        <div class="item0903" id="i3">C</div>
+    </section>
+
+</body>
+</html>
