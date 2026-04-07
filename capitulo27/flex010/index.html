@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Propriedade Flex</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        .voltar {
+            width: 70px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 5px 5px;
+        }
+
+        .titulo01 {
+            text-align: center;
+            margin: 2px;
+            margin-bottom: 20px;
+            font-size: 3em;
+            color: darkblue;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
+            padding: 10px;
+        }
+
+        .info {
+            width: 700px;
+            height: 480px;
+            background-color: lightsteelblue;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .prop {
+            color: brown;
+        }
+
+        .prop02 {
+            color: darkgreen;
+        }
+
+        .prop03 {
+            color: yellow;
+            text-shadow: 1px 1px 1px black;
+
+        }
+
+        .prop04 {
+            color: darkgreen;
+        }
+
+        .prop05 {
+            color: darkgreen;
+        }
+
+        .exemplo {
+            margin: 20px 20px 0px 50px;
+        }
+
+        .sessao01 {
+            width: 950px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item01 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #i1 {
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        #i2 {
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        #i3 {
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+        .sessao02 {
+            width: 950px;
+            background-color: lightseagreen;
+            margin: 20px 20px 0px 100px;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item02 {
+            background-color: aquamarine;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            padding: 7px;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #i1 {
+            flex: 0 1 150px;
+        }
+
+        #i2 {
+            flex: 2 0 150px;
+        }
+
+        #i3 {
+            flex: 1 2 150px;
+        }
+
+        .info02 {
+            width: 700px;
+            height: 600px;
+            background-color: lightsteelblue;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="voltar">
+        <p><a href="/capitulo27/flex001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
+    </button>
+    <h1 class="titulo01">Aula 10: A Propriedade Flex</h1>
+    <hr>
+    <br>
+    <h3 class="info">Vamos conhecer a propriedade flex:<br> <br>
+        É uma propriedade que se aplica aos flex-items, não ao flex-container <br>
+        Essa propriedade funciona como o Shorthand configurando numa única linha... <br>
+        O flex--grow, flex-shrink e o flex-basis. <br> <br>
+        Exemplo: <br>
+        <div class="prop">
+            flex-basis: 150px; <br>
+            flex-grow: 0; <br>
+            flex-shrink: 1; <br>
+        </div>
+        <br>
+        Pode ser substituido por apenas: <br>
+        <div class="prop02">flex: 0 1 150px;</div> <br>
+        <br>
+        Fórmula: <br>
+        <br>
+        <div class="prop03">flex = flex-grow + flex-shrink + flex-basis</div> <br>
+        Obs.: Sempre Nesta Ordem
+
+
+    </h3>
+    <h3 class="exemplo">Exemplo 01 - flex-basis:, flex-grow:, flex-shrink: <br> <br>
+
+        .sessao01 { <br>
+            width: 950px;<br>
+            display: flex; <br>
+            flex-flow: row nowrap; <br>
+        } <br>
+
+        #i1 { <br>
+            flex-basis: 150px; <br>
+            flex-grow: 0; (O item Não pode Crescer) <br>
+            flex-shrink: 1; (O item pode Encolher)<br>
+        } <br>
+
+        #i2 { <br>
+            flex-basis: 150px; <br>
+            flex-grow: 2; (O item B pode Crescer o dobro em relação ao item C)<br>
+            flex-shrink: 0; (O item Não pode Encolher)<br>
+        } <br>
+
+        #i3 { <br>
+            flex-basis: 150px; <br>
+            flex-grow: 1; <br>
+            flex-shrink: 2; (O item C pode Encolher o dobro em relação ao item A)<br>
+        } <br>
+    </h3>
+    <section class="sessao01">
+        <div class="item01" id="i1">A</div>
+        <div class="item01" id="i2">B</div>
+        <div class="item01" id="i3">C</div>
+    </section>
+
+    <h3 class="exemplo">Exemplo 02 - flex: <br> <br>
+
+        .sessao02 { <br>
+            width: 950px;<br>
+            display: flex; <br>
+            flex-flow: row nowrap; <br>
+        } <br>
+
+        #i1 { <br>
+            flex: 0 1 150px; <br>
+        } <br>
+
+        #i2 { <br>
+            flex: 2 0 150px; <br>
+        } <br>
+
+        #i3 { <br>
+            flex: 1 2 150px; <br>
+        } <br>
+    </h3>
+    <section class="sessao02">
+        <div class="item02" id="i1">A</div>
+        <div class="item02" id="i2">B</div>
+        <div class="item02" id="i3">C</div>
+    </section>
+    <br>
+
+    <h3 class="info02">Fórmula: <br>
+        <br>
+        <div class="prop03">flex = flex-grow + flex-shrink + flex-basis</div> <br>
+        Obs.: Sempre Nesta Ordem. <br> <br>
+        A configuração Padrão é: <br> <br>
+        <div class="prop04">
+            flex: 0 1 auto; ou <br>
+            flex: initial;</div> <br>
+        Configuração para deixar os elementos Não Flexiveis: <br> <br>
+        <div class="prop">
+            flex: 0 0 auto; ou <br>
+            flex: none;
+        </div> <br>
+        Configuração para que os elementos tenham o Máximo de Flexibilidade: <br> <br>
+        <div class="prop">
+            flex: 1 1 auto; ou <br>
+            flex: auto;
+        </div> <br>
+        Configuração para que modificar o valor do flex-grow: <br> <br>
+        <div class="prop">
+            flex: 1; flex: 2; flex: 3; ou <br>
+            flex: 1 1 auto; flex: 2 1 auto; flex: 3 1 auto;
+        </div>
+
+
+    </h3>
+</body>
+</html>
