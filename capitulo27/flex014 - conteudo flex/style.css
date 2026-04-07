@@ -20,9 +20,23 @@ body {
     line-height: 1.5em;
 }
 
+.dragon {
+    text-align: center;
+}
+.introd {
+    width: 640px;
+    margin: auto;
+    text-align: justify;
+    font-weight: bold;
+}
+
 body > p, h1, h2 {
     margin-bottom: 10px;
     text-align: justify;
+}
+
+header {
+    background-color: darkred;
 }
 
 header, .normal {
@@ -31,7 +45,7 @@ header, .normal {
 
 .flex-content {
     padding: 20px;
-    background-color: lightgray;
+    background-color: darkred;
 
 
     display: flex;
