@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: lightskyblue;
+}
+
+.voltar {
+    background-color: lightgray;
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.voltar:hover {
+    background-color: lightgreen;
+    text-decoration: none;
+}
+
+ .titulo {
+    font-size: 2.5em;
+    text-align: center;
+    color: darkblue;
+    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.493);
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.438);
+}
+
+main {
+    width: 100vw;
+    height: 83vh;
+    background-color: rgba(128, 128, 128, 0.438);
+
+}
+
+.info {
+    width: 530px;
+    height: 100px;
+    padding: 5px;
+    background-color: lightseagreen;
+    color: lightgrey;
+    text-shadow: 1px 1px 1px black;
+    text-align: justify;
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.493);
+    margin: 10px auto;
+}
+
+.info02 {
+    width: 530px;
+    height: 355px;
+    padding: 5px;
+    background-color: lightseagreen;
+    color: lightgrey;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.493);
+    margin: 10px auto;
+}
+
+.modulo01 {
+    font-size: 1.5em;
+    color: darkgreen;
+    text-shadow: 1px 1px 1px white;
+    margin: auto;
+}
+
+.modulo02 {
+    color: darkgreen;
+    text-shadow: 1px 1px 1px white;
+    margin-bottom: 10px;
+}
+
+.modulo03 {
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.603);
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
