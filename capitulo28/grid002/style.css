@@ -6,11 +6,11 @@
 
 .voltar {
     background-color: lightgray;
-    width: 200px;
+    width: 100px;
     height: 30px;
     border: 1px solid gray;
     border-radius: 5px;
-    margin-top: 5px;
+    margin: 5px 0px 0px 5px;
 }
 
 .voltar:hover {
@@ -65,4 +65,8 @@ footer {
     font-weight: bold;
     text-align: center;
     padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.voltar {
+    background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.voltar:hover {
+    background: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 2.5em;
+    text-align: center;
+    color: lightgray;
+    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.493);
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top left, #ff3d00, transparent 40%),
+              radial-gradient(circle at bottom right, #3d5afe, transparent 40%),
+              linear-gradient(135deg, #121212 0%, #2c3e50 100%);
+  background-attachment: fixed;
+}
+
+.titulo01 {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.info {
+    width: 360px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: lightgrey;
+    text-shadow: 1px 1px 1px black;
+    text-align: justify;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 10px auto;
+}
+
+.titulo02 {
+    margin: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: wheat;
+}
+
+.info02 {
+    margin: 30px;
+    color: wheat;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 800px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: lightgrey;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 20px auto;
+}
+
+.item {
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+}
+
+.titulo03 {
+    margin: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: wheat;
+}
+
+.info03 {
+    margin: 30px;
+    color: wheat;
+}
+
+.container02 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 800px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: lightgrey;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 20px auto;
+}
+
+.item02 {
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+}
+
+.titulo04 {
+    margin: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: wheat;
+}
+
+.info04 {
+    margin: 30px;
+    color: wheat;
+}
+
+.container03 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    width: 800px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: lightgrey;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 20px auto;
+}
+
+.item03 {
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+}
+
+.titulo05 {
+    margin: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: wheat;
+}
+
+.info05 {
+    margin: 30px;
+    color: wheat;
+}
+
+.container04 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px;
+    grid-gap: 20px;
+    width: 800px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: lightgrey;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 20px auto;
+}
+
+.item04 {
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.603);
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}

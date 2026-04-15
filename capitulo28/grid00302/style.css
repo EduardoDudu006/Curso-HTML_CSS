@@ -1,0 +1,163 @@
+/* 1. Reset e Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    /* Fundo moderno com mesh gradient suave */
+    background: radial-gradient(circle at 0% 0%, #4facfe 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, #00f2fe 0%, transparent 50%),
+                #121212;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* 2. Header e Botão Voltar */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.voltar {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.voltar:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+}
+
+.voltar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.voltar img {
+    filter: invert(1); /* Deixa o ícone branco */
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.5), transparent);
+}
+
+/* 3. Seções de Informação (Cards Glass) */
+.info, .info02, .titulo02 {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo01, .titulo02 {
+    font-size: 1.2rem;
+    color: #00f2fe;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilização da Lista (Marcadores Modernos) */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #00f2fe;
+}
+
+/* Bloco de Código */
+.info02 {
+    font-family: 'Consolas', monospace;
+    background: rgba(0, 0, 0, 0.3);
+    color: #a5d6ff;
+    border-left: 4px solid #00f2fe;
+}
+
+/* 4. O Container Grid (A Prática) */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    grid-template-rows: repeat(2, 100px);
+    gap: 15px;
+    width: 600px;
+    margin: 30px auto;
+}
+
+.item {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* 5. Footer (Fixo e Suave) */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 coluna no celular */
+    }
+}
