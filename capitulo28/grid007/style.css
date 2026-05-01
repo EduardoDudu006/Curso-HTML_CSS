@@ -68,10 +68,21 @@ hr {
     background: linear-gradient(to right, transparent, rgba(255,255,255,0.5), transparent);
 }
 
+.sessao {
+    width: 80vw;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    margin: auto;
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    gap: 5px;
+    place-items: normal normal;
+    place-content: center center;
+}
+
 .lista {
     display: grid;
-
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -1px;
     margin: 20px 20px auto;
@@ -98,7 +109,7 @@ li::before {
 }
 
 .info {
-    text-align: center;
+    text-align: start;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -1px;
@@ -109,8 +120,7 @@ li::before {
     border: 3px solid #00f2fe;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
     gap: 25px;
     align-items: normal;
     justify-items: normal;
@@ -142,24 +152,21 @@ li::before {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -1px;
-    margin: 10px 20px auto;
+    margin: 20px 20px auto;
 }
 
 .container02 {
     border: 3px solid #00f2fe;
-    height: 280px;
+    width: 900px;
+    height: 350px;
+    margin: auto;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 25px;
-    align-items: start;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .item02 {
+    height: 115px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 20px;
@@ -178,29 +185,64 @@ li::before {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.info03 {
-    text-align: center;
+.info002 {
+    text-align: start;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -1px;
-    margin: 10px 20px auto;
+    margin: 20px 20px auto;
+}
+
+.container002 {
+    border: 3px solid #00f2fe;
+    width: 900px;
+    height: 350px;
+    margin: auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.item002 {
+    height: 115px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.item002:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.info03 {
+    text-align: start;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 20px 20px auto;
 }
 
 .container03 {
+    width: 900px;
+    height: 350px;
+    margin: auto;
     border: 3px solid #00f2fe;
-    height: 280px;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 25px;
-    align-items: center;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
+    grid-template-columns: 100px 20% repeat(2, 1fr);
 }
 
 .item03 {
+    height: 115px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 20px;

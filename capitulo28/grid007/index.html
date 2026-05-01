@@ -17,30 +17,48 @@
         </h1>
         <hr>
     </header>
-    <h2 class="lista">
-        Propriedasdes do Grid-Container Estudadas até o Momento: <br>
-        "Pai de Todos Dnetro do Grid Layout"
-        <ul class="lista">
-            <li>Display-Flex</li>
-            <li>Display-Grid</li>
-            <li>Grid-Template-Columns</li>
-            <li>Grid-Template-Rows</li>
-            <li>Gap</li>
-            <li>Align-Items</li>
-            <li>Justify-Items</li>
-            <li>Align-Content</li>
-            <li>Justify-Content</li>
-        </ul>
-        ShortHands: <br>
-        <ul class="lista">
-            <li>Grid-Auto-Rows</li>
-            <li>Grid-Auto-Column</li>
-            <li>Place-Items</li>
-            <li>Place-Content</li>
-            <li>Grid-Template</li>
-        </ul>
+    <section class="sessao">
+        <h2 class="lista">
+            Propriedasdes do Grid-Container Estudadas até o Momento: <br>
+            "Pai de Todos Dentro do Grid Layout"
+            <ul class="lista">
+                <li>Display-Flex</li>
+                <li>Display-Grid</li>
+                <li>Grid-Template-Columns</li>
+                <li>Grid-Template-Rows</li>
+                <li>Gap</li>
+                <li>Align-Items</li>
+                <li>Justify-Items</li>
+                <li>Align-Content</li>
+                <li>Justify-Content</li>
+            </ul>
+        </h2>
+        <h2 class="lista">
+            ShortHands: <br>
+            <ul class="lista">
+                <li>Grid-Auto-Rows</li>
+                <li>Grid-Auto-Column</li>
+                <li>Place-Items</li>
+                <li>Place-Content</li>
+                <li>Grid-Template</li>
+            </ul>
+        </h2>
+        <h2 class="lista">
+            O Que Veremos Agora:
+            <ul class="lista">
+                <li>Função Repeat()</li>
+                <li>Unidade Fraction</li>
+            </ul>
+        </h2>
+    </section>
+
+
+
+    <h2 class="info">.container { <br>
+        display: grid; <br>
+        grid-template: repeat(3, 100px) / repeat(3, auto); <br>
+    }
     </h2>
-    <h2 class="info">Container com Configuração Padrão: normal</h2>
     <section class="container">
         <div class="item">A</div>
         <div class="item">B</div>
@@ -53,30 +71,39 @@
         <div class="item">I</div>
     </section>
 
-    <h2 class="info02">Container com Configuração Padrão: start</h2>
+    <h2 class="info02">Utilizando Unidade Fracional</h2>
+    <h2 class="info002">.container { <br>
+        width: 1500px; <br>
+        grid-template-columns: 1fr 1fr 1fr; <br>
+    }
+    </h2>
     <section class="container02">
         <div class="item02">A</div>
         <div class="item02">B</div>
         <div class="item02">C</div>
-        <div class="item02">D</div>
-        <div class="item02">E</div>
-        <div class="item02">F</div>
-        <div class="item02">G</div>
-        <div class="item02">H</div>
-        <div class="item02">I</div>
     </section>
 
-    <h2 class="info03">Container com Configuração Padrão: center</h2>
+    <h2 class="info002">.container { <br>
+        width: 1500px; <br>
+        grid-template-columns: 1fr 2fr 1fr; <br>
+    }
+    </h2>
+    <section class="container002">
+        <div class="item002">A</div>
+        <div class="item002">B</div>
+        <div class="item002">C</div>
+    </section>
+
+    <h2 class="info03">.container { <br>
+        width: 1350px; <br>
+        grid-template-columns: 100px 20% repeat(2, 1fr); <br>
+    }
+    </h2>
     <section class="container03">
         <div class="item03">A</div>
         <div class="item03">B</div>
         <div class="item03">C</div>
         <div class="item03">D</div>
-        <div class="item03">E</div>
-        <div class="item03">F</div>
-        <div class="item03">G</div>
-        <div class="item03">H</div>
-        <div class="item03">I</div>
     </section>
 
     <h2 class="info04">Align-Items - Alinhamento em Linha (Row)<br>
