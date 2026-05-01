@@ -222,7 +222,8 @@ hr {
 }
 
 .item04 {
-
+    width: 80px;
+    height: 80px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 20px;
@@ -352,7 +353,8 @@ hr {
 }
 
 .item07 {
-
+    width: 80px;
+    height: 80px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 20px;
@@ -482,7 +484,8 @@ hr {
 }
 
 .item10 {
-
+    width: 80px;
+    height: 80px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 20px;
@@ -568,6 +571,252 @@ hr {
 }
 
 .item12:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.info07 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 10px 20px auto;
+}
+
+.containerMaster07 {
+    border: 3px solid #00f2fe;
+    height: 355px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    align-items: stretch;
+    justify-items: center;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.container13 {
+    width: 30vw;
+    height: 350px;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    place-items: normal normal;
+    place-content: center;
+}
+
+.item13 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.item13:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.container14 {
+    width: 30vw;
+    height: 350px;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    place-items: stretch normal;
+    place-content: center center;
+}
+
+.item14 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.item14:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.container15 {
+    width: 30vw;
+    height: 350px;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    place-items: normal normal;
+    place-content: space-around space-around;
+
+
+}
+
+.item15 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.item15:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.info08 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 10px 20px auto;
+}
+
+.containerMaster08 {
+    border: 3px solid #00f2fe;
+    height: 355px;
+    border-radius: 20px;
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    gap: 1px;
+    place-items: center center;
+    place-content: center center;
+}
+
+.container16 {
+    width: 30vw;
+    height: 350px;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    gap: 5px;
+    place-items: normal normal;
+    place-content: space-between space-between;
+}
+
+.item16 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.item16:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.container17 {
+    width: 30vw;
+    height: 350px;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    gap: 5px;
+    place-items: stretch normal;
+    place-content: center center;
+}
+
+.item17 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.item17:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.container18 {
+    width: 30vw;
+    height: 350px;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    gap: 5px;
+    place-items: normal normal;
+    place-content: space-around space-around;
+
+
+}
+
+.item18 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.item18:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.2);
     border-color: #00f2fe;
