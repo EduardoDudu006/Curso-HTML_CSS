@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Propriedades de Container para Grids (parte 4)</title>
+</head>
+<body>
+    <header>
+        <button class="voltar">
+            <p><a href="/capitulo28/grid001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
+        </button>
+        <h1 class="titulo">Propriedades de Itens para Grids (parte 1)<br>
+        Propriedades para Itens no Grid Layout
+        </h1>
+        <hr>
+    </header>
+    <section class="sessao">
+        <h2 class="lista">
+            Propriedasdes do Grid-Container Estudadas até o Momento: <br>
+            "Pai de Todos Dentro do Grid Layout"
+            <ul class="lista">
+                <li>Display-Flex</li>
+                <li>Display-Grid</li>
+                <li>Grid-Template-Columns</li>
+                <li>Grid-Template-Rows</li>
+                <li>Gap</li>
+                <li>Align-Items</li>
+                <li>Justify-Items</li>
+                <li>Align-Content</li>
+                <li>Justify-Content</li>
+            </ul>
+        </h2>
+        <h2 class="lista">
+            ShortHands: <br>
+            <ul class="lista">
+                <li>Grid-Auto-Rows</li>
+                <li>Grid-Auto-Column</li>
+                <li>Place-Items</li>
+                <li>Place-Content</li>
+                <li>Grid-Template</li>
+                <li>Função Repeat()</li>
+                <li>Unidade Fraction(1fr)</li>
+            </ul>
+        </h2>
+        <h2 class="lista">
+            O Que Veremos Agora:
+            <ul class="lista">
+                <li>Grid-Row-Start</li>
+                <li>Grid-Row-End</li>
+                <li>Grid-Column-Start</li>
+                <li>Grid-Column-End</li>
+            </ul>
+        </h2>
+    </section>
+
+
+
+    <h2 class="info">.container { <br>
+        display: grid; <br>
+        grid-template: repeat(3, 100px) / repeat(3, auto); <br>
+    }
+    </h2>
+    <section class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+    </section>
+
+    <h2 class="info02">Utilizando Unidade Fracional</h2>
+    <h2 class="info002">.container { <br>
+        width: 1500px; <br>
+        grid-template-columns: 1fr 1fr 1fr; <br>
+    }
+    </h2>
+    <section class="container02">
+        <div class="item02" id="caixa1">A</div>
+        <div class="item02" id="caixa2">B</div>
+        <div class="item02" id="caixa3">C</div>
+    </section>
+
+    <h2 class="info002">.container { <br>
+        width: 1500px; <br>
+        grid-template-columns: 1fr 2fr 1fr; <br>
+    }
+    </h2>
+    <section class="container002">
+        <div class="item002">A</div>
+        <div class="item002">B</div>
+        <div class="item002">C</div>
+    </section>
+
+    <h2 class="info03">.container { <br>
+        width: 1350px; <br>
+        grid-template-columns: 100px 20% repeat(2, 1fr); <br>
+    }
+    </h2>
+    <section class="container03">
+        <div class="item03">A</div>
+        <div class="item03">B</div>
+        <div class="item03">C</div>
+        <div class="item03">D</div>
+    </section>
+
+    <footer>
+        Site desenvolvido por <strong>Eduardo Luz</strong> durante o Módulo 05 do Curso de HTML5 e CSS3
+    </footer>
+</body>
+</html>
