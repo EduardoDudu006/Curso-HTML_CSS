@@ -11,10 +11,10 @@ body {
 
     /* Gradiente radial multicamadas (Organic Deep Style) */
     background:
-        radial-gradient(circle at 85% 15%, #50c87825 0%, transparent 50%), /* Verde Esmeralda Brilhante */
-        radial-gradient(circle at 15% 80%, #2e4d2344 0%, transparent 55%), /* Verde Musgo Profundo */
-        radial-gradient(circle at 50% 50%, #8b5a2b18 0%, transparent 70%), /* Bronze/Terra para aquecer o centro */
-        #0a0f08; /* Fundo "Deep Forest" quase preto, mas com base verde */
+        radial-gradient(circle at 85% 15%, #4cd87b25 0%, transparent 50%), /* Verde Esmeralda Brilhante */
+        radial-gradient(circle at 15% 80%, #2f552244 0%, transparent 55%), /* Verde Musgo Profundo */
+        radial-gradient(circle at 50% 50%, #a5632518 0%, transparent 70%), /* Bronze/Terra para aquecer o centro */
+        #263f1b; /* Fundo "Deep Forest" quase preto, mas com base verde */
 
     background-attachment: fixed;
     margin: 0;

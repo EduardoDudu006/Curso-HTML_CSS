@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+
+    /* Gradiente vibrante com alta saturação */
+    background:
+        radial-gradient(circle at 10% 10%, #6200ea55 0%, transparent 40%), /* Roxo Elétrico */
+        radial-gradient(circle at 90% 10%, #00e5ff44 0%, transparent 40%), /* Ciano Neon */
+        radial-gradient(circle at 50% 90%, #ff2d7533 0%, transparent 50%), /* Rosa Choque */
+        radial-gradient(circle at 80% 50%, #ff8c0022 0%, transparent 40%), /* Laranja Vibrante */
+        #050508; /* Fundo "Deep Space" quase puro para as cores brilharem */
+
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* 2. Header e Botão Voltar */
+header {
+
+    margin-bottom: 30px;
+}
+
+.voltar {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px 20px;
+}
+
+.voltar:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+}
+
+.voltar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.voltar img {
+    filter: invert(1); /* Deixa o ícone branco */
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 10px 0px 10px 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.5), transparent);
+}
+
+[class^="caixa"] {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 1px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+[class^="caixa"]:hover {
+    border-color: #00e5ff;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4); /* Glow de Neon */
+    background: rgba(255, 255, 255, 0.15);
+}
+
+[class^="info"] {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 10px 20px auto;
+}
+
+.container01 {
+    max-width: 55%;
+    height: 550px;
+    margin: 20px auto;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+    gap: 5px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.caixa19 {
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.caixa20 {
+    grid-area: 1 / 2 / span 2 / span 2;
+}
+
+.caixa21 {
+    grid-area: 1 / 4 / span 2 / span 1;
+}
+
+.caixa22 {
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.caixa23 {
+    grid-area: 3 / 2 / span 1 / span 2;
+}
+
+.caixa24 {
+    grid-area: 3 / 4 / span 1 / span 1;
+}
+
+.caixa25 {
+    grid-area: 4 / 1 / span 6 / span 1;
+}
+
+.caixa26 {
+    grid-area: 4 / 2 / span 6 / span 2;
+}
+
+.caixa27 {
+    grid-area: 4 / 4 / span 6 / span 1;
+}
+
+.caixa28 {
+    grid-area: 10 / 1 / span 1 / span 1;
+}
+
+.caixa29 {
+    grid-area: 10 / 2 / span 1 / span 2;
+}
+
+.caixa30 {
+    grid-area: 10 / 4 / span 1 / span 1;
+}
+
+.container02 {
+    max-width: 55%;
+    height: 550px;
+    margin: 20px auto;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+    gap: 5px; /* O espaçamento fica aqui! */
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.caixa31 {
+    grid-area: 1 / 1 / span 2 / span 4;
+}
+
+.caixa32 {
+    grid-area: 3 / 1 / span 1 / span 4;
+}
+
+.caixa33 {
+    grid-area: 4 / 1 / span 6 / span 3;
+}
+
+.caixa34 {
+    grid-area: 4 / 4 / span 6 / span 1;
+}
+
+.caixa35 {
+    grid-area: 10 / 1 / span 1 / span 4;
+}
+
+.container03 {
+    width: 90vw;
+    height: 100vh;
+    margin: 20px auto;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template: 80px 40px 1fr 40px / 1fr 150px;
+    gap: 5px; /* O espaçamento fica aqui! */
+    padding: 1px;
+
+}
+
+.caixa36 {
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+.caixa37 {
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+.caixa38 {
+    grid-area: 3 / 1 / -2 / 2;
+}
+
+.caixa39 {
+    grid-area: 3 / -2 / -2 / -1;
+}
+
+.caixa40 {
+    grid-area: -2 / 1 / -1 / -1;
+}
+
+/* 5. Footer (Fixo e Suave) */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 coluna no celular */
+    }
+}
