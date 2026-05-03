@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Propriedades de Container para Grids (parte 4)</title>
+    <title>Propriedades e Posicionamento de Itens para Grids</title>
 </head>
 <body>
     <header>
         <button class="voltar">
             <p><a href="/capitulo28/grid001/index.html" rel="prev"> <img width="15" height="15" src="https://img.icons8.com/dotty/80/back.png" alt="back"/>Voltar</a></p>
         </button>
-        <h1 class="titulo">Propriedades de Itens para Grids (parte 1)<br>
-        Propriedades para Itens no Grid Layout
+        <h1 class="titulo">Aula 08: Propriedades de Itens para Grids (parte 1)<br>
+        Aula 09: Posicionando Itens no Grid Layout <br>
+        Aula 10: CSS Grid: ShortHands para Itens
         </h1>
         <hr>
     </header>
@@ -56,11 +57,10 @@
         </h2>
     </section>
 
-
-
     <h2 class="info">.container { <br>
         display: grid; <br>
-        grid-template: repeat(3, 100px) / repeat(3, auto); <br>
+        grid-template: repeat(3, 165px) / repeat(4, 1fr); <br>
+        gap: 25px; <br>
     }
     </h2>
     <section class="container">
@@ -78,10 +78,12 @@
         <div class="item">L</div>
     </section>
 
-    <h2 class="info02">Utilizando Unidade Fracional</h2>
-    <h2 class="info002">.container { <br>
-        width: 1500px; <br>
-        grid-template-columns: 1fr 1fr 1fr; <br>
+    <h2 class="info">.container { <br>
+        display: grid; <br>
+    grid-template: repeat(3, 165px) / repeat(4, 1fr); <br>
+    gap: 25px; <br>
+    padding: 10px; <br>
+    align-content: space-between; <br>
     }
     </h2>
     <section class="container02">
@@ -90,27 +92,181 @@
         <div class="item02" id="caixa3">C</div>
     </section>
 
-    <h2 class="info002">.container { <br>
-        width: 1500px; <br>
-        grid-template-columns: 1fr 2fr 1fr; <br>
-    }
-    </h2>
-    <section class="container002">
-        <div class="item002">A</div>
-        <div class="item002">B</div>
-        <div class="item002">C</div>
-    </section>
-
     <h2 class="info03">.container { <br>
-        width: 1350px; <br>
-        grid-template-columns: 100px 20% repeat(2, 1fr); <br>
+        display: grid;
+        grid-template: 150px repeat(2, 1fr) / repeat(4, 1fr); <br>
+        gap: 15px; <br>
+        padding: 8px; <br>
+        box-sizing: border-box; <br>
     }
     </h2>
     <section class="container03">
-        <div class="item03">A</div>
-        <div class="item03">B</div>
-        <div class="item03">C</div>
-        <div class="item03">D</div>
+        <div class="caixa01">Caixa01 { <br>
+            grid-row-start: 1;
+            grid-row-end: 2; <br>
+            grid-column-start: 1;
+            grid-column-end: 5; }
+        </div>
+        <div class="caixa02">Caixa02 { <br>
+            grid-row-start: 2; <br>
+            grid-row-end: 4; <br>
+            grid-column-start: 1; <br>
+            grid-column-end: 3; <br>
+        }
+        </div>
+        <div class="caixa03">Caixa03 { <br>
+            grid-row-start: 2; <br>
+            grid-row-end: 4; <br>
+            grid-column-start: 3; <br>
+            grid-column-end: 5; <br>
+        }
+        </div>
+    </section>
+
+    <h2 class="info04">Utilizando ShortHands: <br>
+        ✅ Grid-Row <br>
+        ✅ Grid-Column <br>
+    </h2>
+    <h2 class="info03">.container { <br>
+        display: grid;
+        grid-template: 150px repeat(2, 1fr) / repeat(4, 1fr); <br>
+        gap: 15px; <br>
+        padding: 8px; <br>
+        box-sizing: border-box; <br>
+    }
+    </h2>
+    <section class="container04">
+        <div class="caixa04">Caixa04 { <br>
+            grid-row: 1 / 2; <br>
+            grid-column: 1 / 5; }
+        </div>
+        <div class="caixa05">Caixa05 { <br>
+            grid-row: 2 / 4; <br>
+            grid-column: 1 / 3; <br>
+        }
+        </div>
+        <div class="caixa06">Caixa06 { <br>
+            grid-row: 2 / 4; <br>
+            grid-column: 3 / 5; <br>
+        }
+        </div>
+    </section>
+
+    <section class="container05">
+        <div class="caixa07">Caixa07 { <br>
+            grid-row: 1 / 2; <br>
+            grid-column: 1 / 5; }
+        </div>
+        <div class="caixa08">Caixa08 { <br>
+            grid-row: 2 / 4; <br>
+            grid-column: 1 / 3; <br>
+        }
+        </div>
+        <div class="caixa09">Caixa09 { <br>
+            grid-row: 2 / 4; <br>
+            grid-column: 3 / 5; <br>
+        }
+        </div>
+    </section>
+
+    <h2 class="info04">✅ Grid-Area</h2>
+
+    <section class="container06">
+        <div class="caixa10">Caixa10 { <br>
+            grid-area: 1 / 1 / 4 / 3; <br>
+        }
+        </div>
+        <div class="caixa11">Caixa11 { <br>
+            grid-area: 1 / 3 / 3 / 5; <br>
+        }
+        </div>
+        <div class="caixa12">Caixa12 { <br>
+            grid-area: 3 / 3 / 4 / 5; <br>
+        }
+        </div>
+    </section>
+
+    <h2 class="info05">Obs.: Ordem do Grid-Area<br>
+        1º Grid-Row-Start: ; <br>
+        2º Grid-Column-Start: ; <br>
+        3º Grid-Row-End: ; <br>
+        4º Grid-Column-End: ;
+    </h2>
+
+    <h2 class="info04">✅ Span</h2>
+
+    <section class="container07">
+        <div class="caixa13">Caixa13 { <br>
+            grid-area: 1 / 1 / span 3 / span 2; <br>
+        }
+        </div>
+        <div class="caixa14">Caixa14 { <br>
+            grid-area: 1 / 3 / span 2 / span 2; <br>
+        }
+        </div>
+        <div class="caixa15">Caixa15 { <br>
+            grid-area: 3 / 3 / span 1 / span 2; <br>
+        }
+        </div>
+    </section>
+
+    <h2 class="info06">Propriedade Span: <br> <br>
+        Define a Expansão da Área <br>
+        No Exemplo acima: (caixa13) <br>
+        O Grid-row vai da linha 1 <br>
+        Até a linha 4. <br>
+        Então a Expansão foi de 3 linhas. <br>
+        Já o Grid-Column vai da Coluna 1 <br>
+        Até a Coluna 3. <br>
+        Então a Expansão foi de 2 Colunas. <br> <br>
+        grid-area: 1 / 1 / span 3 / span 2;
+    </h2>
+
+    <h2 class="info04">✅ Simplificando Declarações</h2>
+    <section class="container08">
+        <div class="caixa16"> Completo: <br> <br>
+            Caixa16 { <br>
+            grid-row-start: 1; <br>
+            grid-row-end: 4; <br>
+            grid-column-start: 1; <br>
+            grid-column-end: 3; <br>
+        }
+        </div>
+        <div class="caixa17">1ª Simplificação: <br> <br>
+            Caixa17 { <br>
+            grid-row: 1 / 3; <br>
+            grid-column: 3 / 5; <br>
+        }
+        </div>
+        <div class="caixa18">2ª Simplificação: <br>
+            Caixa18 { <br>
+            grid-area: 3 / 3 / span 1 / span 2; }
+        </div>
+    </section>
+
+    <h2 class="info04">✅ Desafio:</h2>
+
+    <section class="container09">
+        <div class="caixa19">19</div>
+        <div class="caixa20">20</div>
+        <div class="caixa21">21</div>
+        <div class="caixa22">22</div>
+        <div class="caixa23">23</div>
+        <div class="caixa24">24</div>
+        <div class="caixa25">25</div>
+        <div class="caixa26">26</div>
+        <div class="caixa27">27</div>
+        <div class="caixa28">28</div>
+        <div class="caixa29">29</div>
+        <div class="caixa30">30</div>
+    </section>
+
+    <section class="container10">
+        <div class="caixa31">Topo</div>
+        <div class="caixa32">Menu</div>
+        <div class="caixa33">Principal</div>
+        <div class="caixa34">Secundário</div>
+        <div class="caixa35">Rodapé</div>
     </section>
 
     <footer>

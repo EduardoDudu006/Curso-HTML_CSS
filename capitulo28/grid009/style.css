@@ -56,11 +56,10 @@ header {
 }
 
 .titulo {
-    text-align: center;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -1px;
-    margin-bottom: 10px;
+    margin: 10px 0px 10px 20px;
 }
 
 hr {
@@ -118,13 +117,14 @@ li::before {
 
 .container {
     width: 80vw;
-    height: 550px;
+    height: 570px;
     border: 3px solid #00f2fe;
     border-radius: 20px;
     margin: auto;
     display: grid;
     grid-template: repeat(3, 165px) / repeat(4, 1fr);
     gap: 25px;
+    padding: 10px;
     align-items: normal;
     justify-items: normal;
     align-content: normal;
@@ -150,31 +150,19 @@ li::before {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.info02 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 20px 20px auto;
-}
-
 .container02 {
     width: 80vw;
-    height: 600px;
+    height: 450px;
     border: 3px solid #00f2fe;
     border-radius: 20px;
     margin: auto;
     display: grid;
-    grid-template: repeat(3, 165px) / repeat(4, 1fr);
-    gap: 25px;
-    align-items: normal;
-    justify-items: normal;
-    align-content: space-between;
-    justify-content: normal;
+    grid-template: 150px repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 15px;
+    padding: 8px;
 }
 
 .item02 {
-    height: 115px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 20px;
@@ -184,7 +172,6 @@ li::before {
     font-weight: bold;
     transition: 0.3s;
     gap: 10px;
-
 }
 
 .item02:hover {
@@ -195,7 +182,6 @@ li::before {
 }
 
 #caixa1 {
-    height: 190px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -203,7 +189,6 @@ li::before {
 }
 
 #caixa2 {
-    height: 380px;
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -211,49 +196,10 @@ li::before {
 }
 
 #caixa3 {
-    height: 380px;
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 5;
-}
-
-.info002 {
-    text-align: start;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 20px 20px auto;
-}
-
-.container002 {
-    border: 3px solid #00f2fe;
-    width: 900px;
-    height: 350px;
-    margin: auto;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-.item002 {
-    height: 115px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item002:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .info03 {
@@ -265,17 +211,19 @@ li::before {
 }
 
 .container03 {
-    width: 900px;
-    height: 350px;
+    max-width: 85%;
+    height: 450px;
     margin: auto;
     border: 3px solid #00f2fe;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 100px 20% repeat(2, 1fr);
+    grid-template: 150px repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 15px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do container */
 }
 
-.item03 {
-    height: 115px;
+[class^="caixa"] {
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 20px;
@@ -284,653 +232,288 @@ li::before {
     font-size: 1.5rem;
     font-weight: bold;
     transition: 0.3s;
-    gap: 20px;
 }
 
-.item03:hover {
+[class^="caixa"]:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.2);
     border-color: #00f2fe;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.caixa01 {
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.caixa02 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.caixa03 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
 
 .info04 {
     text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 10px 20px auto;
-}
-
-.containerMaster04 {
-    border: 3px solid #00f2fe;
-    height: 355px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-    align-items: normal;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
+    font-size: 3rem;
+    margin: 20px;
 }
 
 .container04 {
-    width: 30vw;
-    height: 350px;
+    max-width: 85%;
+    height: 450px;
+    margin: auto;
     border: 3px solid #00f2fe;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: start;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
+    grid-template: 150px repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 15px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do container */
 }
 
-.item04 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
+.caixa04 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
 }
 
-.item04:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.caixa05 {
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+}
+
+.caixa06 {
+    grid-row: 2 / 4;
+    grid-column: 3 / 5;
 }
 
 .container05 {
-    width: 30vw;
-    height: 350px;
+    max-width: 85%;
+    height: 450px;
+    margin: 20px auto;
     border: 3px solid #00f2fe;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: center;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: 15px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do container */
 }
 
-.item05 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
+.caixa07 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 3;
 }
 
-.item05:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.caixa08 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+}
+
+.caixa09 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
 }
 
 .container06 {
-    width: 30vw;
-    height: 350px;
+    max-width: 85%;
+    height: 450px;
+    margin: 20px auto;
     border: 3px solid #00f2fe;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: end;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
-
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: 15px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do container */
 }
 
-.item06 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
+.caixa10 {
+    grid-area: 1 / 1 / 4 / 3;
 }
 
-.item06:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.caixa11 {
+    grid-area: 1 / 3 / 3 / 5;
+}
+
+.caixa12 {
+    grid-area: 3 / 3 / 4 / 5;
 }
 
 .info05 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 10px 20px auto;
-}
-
-.containerMaster05 {
+    width: 340px;
     border: 3px solid #00f2fe;
-    height: 355px;
     border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    margin: 10px auto;
     gap: 10px;
-    align-items: normal;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
+    padding: 10px;
 }
 
 .container07 {
-    width: 30vw;
-    height: 350px;
+    max-width: 85%;
+    height: 450px;
+    margin: 20px auto;
     border: 3px solid #00f2fe;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: normal;
-    justify-items: start;
-    align-content: normal;
-    justify-content: normal;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: 15px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do container */
 }
 
-.item07 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
+.caixa13 {
+    grid-area: 1 / 1 / span 3 / span 2;
 }
 
-.item07:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.caixa14 {
+    grid-area: 1 / 3 / span 2 / span 2;
 }
 
-.container08 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: normal;
-    justify-items: center;
-    align-content: normal;
-    justify-content: normal;
-}
-
-.item08 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item08:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.container09 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: normal;
-    justify-items: end;
-    align-content: normal;
-    justify-content: normal;
-
-}
-
-.item09 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item09:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.caixa15 {
+    grid-area: 3 / 3 / span 1 / span 2;
 }
 
 .info06 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 10px 20px auto;
+    width: 430px;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    margin: 10px auto;
+    gap: 10px;
+    padding: 10px;
 }
 
-.containerMaster06 {
+.container08 {
+    max-width: 85%;
+    height: 450px;
+    margin: 20px auto;
     border: 3px solid #00f2fe;
-    height: 355px;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-    align-items: center;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: 15px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do container */
+}
+
+.caixa16 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.caixa17 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+}
+
+.caixa18 {
+    grid-area: 3 / 3 / span 1 / span 2;
+}
+
+.container09 {
+    max-width: 55%;
+    height: 550px;
+    margin: 20px auto;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+    gap: 15px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.caixa19 {
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.caixa20 {
+    grid-area: 1 / 2 / span 2 / span 2;
+}
+
+.caixa21 {
+    grid-area: 1 / 4 / span 2 / span 1;
+}
+
+.caixa22 {
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.caixa23 {
+    grid-area: 3 / 2 / span 1 / span 2;
+}
+
+.caixa24 {
+    grid-area: 3 / 4 / span 1 / span 1;
+}
+
+.caixa25 {
+    grid-area: 4 / 1 / span 6 / span 1;
+}
+
+.caixa26 {
+    grid-area: 4 / 2 / span 6 / span 2;
+}
+
+.caixa27 {
+    grid-area: 4 / 4 / span 6 / span 1;
+}
+
+.caixa28 {
+    grid-area: 10 / 1 / span 1 / span 1;
+}
+
+.caixa29 {
+    grid-area: 10 / 2 / span 1 / span 2;
+}
+
+.caixa30 {
+    grid-area: 10 / 4 / span 1 / span 1;
 }
 
 .container10 {
-    width: 30vw;
-    height: 350px;
+    max-width: 55%;
+    height: 550px;
+    margin: 20px auto;
     border: 3px solid #00f2fe;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: normal;
-    justify-items: normal;
-    align-content: space-evenly;
-    justify-content: space-evenly;
+    grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+    gap: 15px; /* O espaçamento fica aqui! */
+    padding: 8px;
+    box-sizing: border-box;
 }
 
-.item10 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
+.caixa31 {
+    grid-area: 1 / 1 / span 2 / span 4;
 }
 
-.item10:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.caixa32 {
+    grid-area: 3 / 1 / span 1 / span 4;
 }
 
-.container11 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: normal;
-    justify-items: normal;
-    align-content: center;
-    justify-content: center;
+.caixa33 {
+    grid-area: 4 / 1 / span 6 / span 3;
 }
 
-.item11 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
+.caixa34 {
+    grid-area: 4 / 4 / span 6 / span 1;
 }
 
-.item11:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.container12 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    align-items: normal;
-    justify-items: normal;
-    align-content: space-around;
-    justify-content: space-around;
-
-}
-
-.item12 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item12:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.info07 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 10px 20px auto;
-}
-
-.containerMaster07 {
-    border: 3px solid #00f2fe;
-    height: 355px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-    align-items: stretch;
-    justify-items: center;
-    align-content: stretch;
-    justify-content: center;
-}
-
-.container13 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    place-items: normal normal;
-    place-content: center;
-}
-
-.item13 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item13:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.container14 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    place-items: stretch normal;
-    place-content: center center;
-}
-
-.item14 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item14:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.container15 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
-    place-items: normal normal;
-    place-content: space-around space-around;
-
-
-}
-
-.item15 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item15:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.info08 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 10px 20px auto;
-}
-
-.containerMaster08 {
-    border: 3px solid #00f2fe;
-    height: 355px;
-    border-radius: 20px;
-    display: grid;
-    grid-template: auto auto auto / auto auto auto;
-    gap: 1px;
-    place-items: center center;
-    place-content: center center;
-}
-
-.container16 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template: auto auto auto / auto auto auto;
-    gap: 5px;
-    place-items: normal normal;
-    place-content: space-between space-between;
-}
-
-.item16 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item16:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.container17 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template: auto auto auto / auto auto auto;
-    gap: 5px;
-    place-items: stretch normal;
-    place-content: center center;
-}
-
-.item17 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item17:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.container18 {
-    width: 30vw;
-    height: 350px;
-    border: 3px solid #00f2fe;
-    border-radius: 20px;
-    display: grid;
-    grid-template: auto auto auto / auto auto auto;
-    gap: 5px;
-    place-items: normal normal;
-    place-content: space-around space-around;
-
-
-}
-
-.item18 {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: 0.3s;
-    gap: 20px;
-}
-
-.item18:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #00f2fe;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.caixa35 {
+    grid-area: 10 / 1 / span 1 / span 4;
 }
 
 /* 5. Footer (Fixo e Suave) */
