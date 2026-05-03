@@ -304,6 +304,40 @@ hr {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
+.container08 {
+    width: 600px;
+    border: 3px solid #00f2fe;
+    border-radius: 20px;
+    margin: auto;
+    display: grid;
+    grid-template: repeat(3, 80px) / 100px 40% repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-auto-rows: 80px;
+    grid-auto-columns: 120px;
+    gap: 10px;
+    place-items: normal normal;
+    place-content: normal normal;
+}
+
+.item08 {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.item08:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 /* 5. Footer (Fixo e Suave) */
 footer {
     margin-top: auto;
